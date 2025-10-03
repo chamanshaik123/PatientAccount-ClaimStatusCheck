@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tvRTqv9Lk0W6sD4IlqePkg" Reference="0OjwGQNFZEimLaR_hhDcng/h4lbsSPJdkSLa1f1xUVjdQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="f579a3df-0dde-4e3a-85c0-750c46b0986c" DesignTimeRectangle="429, 312, 98, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tableCol='5' tableRow='2' tag='DIV' parentclass='IccGridColFocus' parentid='ctlBillingPeriodTable' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Label' tag='DIV' parentclass='IccGridColFocus' parentid='ctlBillingPeriodTable' /&gt;" Guid="5446d3ee-42cc-41b8-ac0f-89e522a8ff4d" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="a5cf740b2c9728c57866da4fede57a7f.png" xmlns="">02Hq3PSdrakG0BcE-YCzzhQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

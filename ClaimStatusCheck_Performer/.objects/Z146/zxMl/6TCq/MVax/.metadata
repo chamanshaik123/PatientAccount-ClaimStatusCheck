@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT ctlIccComboBox1Te…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "MVax13h2YUKdBlM_hWRlkw",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/MVax13h2YUKdBlM_hWRlkw",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/6TCqGy2eJUGYvCKfjvyhXg",
+  "Created": "2025-06-30T12:07:12.7597719Z",
+  "Updated": "2025-06-30T12:07:12.7597719Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

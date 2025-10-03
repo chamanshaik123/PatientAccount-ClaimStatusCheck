@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Clinical",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "--V5PiYeWUuIzJ7S1ZCJmA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/--V5PiYeWUuIzJ7S1ZCJmA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/4aX4tmujpEquubNGkBG8Aw",
+  "Created": "2025-06-12T12:09:08.0797322Z",
+  "Updated": "2025-06-12T12:09:08.0797322Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

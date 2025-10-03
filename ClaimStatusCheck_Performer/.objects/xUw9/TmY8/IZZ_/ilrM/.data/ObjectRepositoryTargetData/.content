@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ASVhracbQk6QREAp2dgu6Q" Reference="0OjwGQNFZEimLaR_hhDcng/ilrMm-nJp0yRH9IvqBsLDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="e0e1bc6e-7030-4775-8436-539ddb5952ab" DesignTimeRectangle="359, 330, 64, 19" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='Finalized Date' tag='P' class='mb-0 text-right overflow-auto' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='Finalized Date' tag='P' class='mb-0 text-right overflow-auto' type='' /&gt;" Guid="066f8675-96d0-4864-81f7-089695224f78" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd7aabbdc2692ec1c7f1ebf070a6ef23.png" xmlns="">0gcJnDqNKLky8rCq3uUt9Iw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

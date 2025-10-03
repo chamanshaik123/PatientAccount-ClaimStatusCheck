@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ETgvR7D7ZUC01wktJwE95g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="8463dc56-8eb9-4a92-a7ea-481909128248" DesignTimeRectangle="452, 439, 377, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerNpi' tag='INPUT' aaname='* Provider NPI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerNpi' tag='INPUT' aaname='* Provider NPI' type='text' class='is-touched av-valid form-control' /&gt;" Guid="50bbb8b2-d5b1-4277-9b3e-50e0bbc16778" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="db19ab422745fdbb29c9c6aa4d731682.png" xmlns="">0-OGzhiUSpEW_wu-ILYaRsQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

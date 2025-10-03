@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="P7bo-G7tf0iz-th8ylED_Q" Reference="0OjwGQNFZEimLaR_hhDcng/NYQ9qcZwo0m2NLZBcQOwQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="b0386e27-a015-43cc-81d7-f60fc795594c" DesignTimeRectangle="284, 217, 138, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' aaname='{0}' colName='Worklist Name' /&gt;&quot;, currentText)]" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='CAMC Blue Cross at Risk' colName='Worklist Name' type='' class='Ellipsis' check:text='CAMC Blue Cross at Risk' /&gt;" Guid="46af37e6-f5a0-4cf4-b0a4-d510fb1214c4" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="11ee35f93dd36ad8626ef1c71b2c357f.png" xmlns="">0qKlQClGgKk-17EZFSQVfIg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="currentText" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

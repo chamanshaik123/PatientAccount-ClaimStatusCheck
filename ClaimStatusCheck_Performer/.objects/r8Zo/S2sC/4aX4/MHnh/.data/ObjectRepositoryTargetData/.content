@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KR0p4VAaHkGM0M30Nx6c8Q" Reference="0OjwGQNFZEimLaR_hhDcng/MHnhHNhIs0CQwlU066M6gg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="c0ec7bd4-9a55-4f70-b148-33e692b35fe8" DesignTimeRectangle="784, 101, 132, 27" DesignTimeScaleFactor="0.800000011920929" FullSelectorArgument="&lt;webctrl tag='DIV' class='nav-select2-dropdown navbar-form ng-scope' parentclass='av-nav-lg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='nav-select2-dropdown navbar-form ng-scope' parentclass='av-nav-lg' type='' aaname='    ' check:text='WVWest Virginia' /&gt;" Guid="341bd652-c548-402a-aef4-1325036892ff" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="373eec78b5ca124e86c1ac8b322f1701.png" xmlns="">0EpRmpaN8gUKrPStobmHFCQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

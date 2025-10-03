@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Y9s_Jt1cQ0SlKIw3fQrP1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="fa18bc3f-3f61-4efb-bc00-634d9487ddb7" DesignTimeRectangle="807, 109, 66, 12" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl class='av-nav-lg-inline' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='av-nav-lg-inline' tag='SPAN' type='' /&gt;" Guid="59e1eb7a-f5e9-494d-a928-b58de1120a28" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials - Less than 29 minutes left until session expiration.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="da2766fcd900bda03e708390f06a677d.png" xmlns="">0U3ao31oqvUqXaGIfypqiig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

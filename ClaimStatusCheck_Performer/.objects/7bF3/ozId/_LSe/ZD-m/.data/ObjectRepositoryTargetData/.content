@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ntdmHxSEsUuSSLZ3VcsH9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="24f28493-6165-4141-8675-91521bf54859" DesignTimeRectangle="184, 119, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' aaname='OK' check:text='OK' /&gt;" Guid="3eb57502-feb3-4d6a-bd9e-43c32adb15bb" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' isremoteapp='1' title='Error:  Security Failure.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a514db592a3a7450032674d33697057d.png" xmlns="">0Hi-O8wCItUyyXZCSa3TvlA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

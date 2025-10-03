@@ -1,0 +1,14 @@
+﻿{
+  "Name": "SFUPGRADESSI, REMOVEDEN…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "Mdi5VqScDEWE0XCKnnAWhg",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/Mdi5VqScDEWE0XCKnnAWhg",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/5fkk7N7bKUuReXNruNVAPg",
+  "Created": "2025-04-23T10:12:24.6385315Z",
+  "Updated": "2025-04-23T10:12:24.6385315Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

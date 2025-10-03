@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="15Q3uVjoZEW2GJfS5H7ljA" Reference="0OjwGQNFZEimLaR_hhDcng/Dxm6SwXdrkOKHgGHtwXHNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="15, 170, 672, 120" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Free-form Comment' id='ctlFreeFormComment_TextArea' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Free-form Comment' id='ctlFreeFormComment_TextArea' type='textarea' class='IccTextArea' /&gt;" Guid="9c3173dd-531c-4ce4-a088-676747da9638" IsResponsive="True" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c32e875a-4a8a-43dd-80f9-7145b088449f" CvTextArea="20, 150, 116, 12" CvTextArgument="Free-form Comment" CvType="Text" DesignTimeRectangle="21, 151, 115, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Label_ctlFreeFormComment_TextArea' type='' class='field-label' tag='LABEL' aaname='' check:text='Free-form Comment' /&gt;" Guid="aace3ae5-6f03-47d4-8781-71f27a26cbba" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5390e2e0cf0fdd4517fa38a6c2d2ed9d.png" xmlns="">0xi44XjU_dUe0B3SNvErW8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

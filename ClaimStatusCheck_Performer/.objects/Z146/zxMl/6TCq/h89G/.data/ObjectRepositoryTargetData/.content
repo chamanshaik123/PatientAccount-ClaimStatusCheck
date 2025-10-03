@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rc7M0wrdZ0-MRvFkpOWh_w" Reference="0OjwGQNFZEimLaR_hhDcng/h89Gvwq6OUapmI3ACtMieg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ea94a35f-3390-4dee-a867-ad16e564ed1c" DesignTimeRectangle="700, 407, 150, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tableRow='1' tag='INPUT' type='text' id='ctlIccTextBox19Text__' /&gt;" FuzzySelectorArgument="&lt;webctrl class='IccTextBox' tag='INPUT' type='text' id='ctlIccTextBox19Text__' aaname='' /&gt;" Guid="512ea2a8-70c2-496a-bbea-1b28b79c9010" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="66bcde2a4f515784876f13e971edfaaf.png" xmlns="">09pr-bO5go0uwW2uEAnyjAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AXCnSghJRkmCLrL74TX-Sg" Reference="0OjwGQNFZEimLaR_hhDcng/OW2Q-EiNXU2ZjsCdWsdWXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="135c7929-a665-46c8-93cc-a3763ee8220d" DesignTimeRectangle="896, 408, 307, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Add comment' aria-role='menuitem' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='IccPopUpMenuItem IccPopUpMenuItemFocused' tag='TD' aaname='Add comment' check:text='Add comment' /&gt;" Guid="8b5509a9-56c1-4261-bdc3-d0222076311a" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="7640b323f3c80ccfd5ccb14b3c69d90c.png" xmlns="">08VUqa5IFU0OpPJ7sKytGVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

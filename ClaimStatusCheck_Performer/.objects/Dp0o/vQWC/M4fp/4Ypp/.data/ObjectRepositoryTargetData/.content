@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e3BtpkqyX0CL7zf29DJJow" Reference="0OjwGQNFZEimLaR_hhDcng/4YppNTMaDEeIEzTLZK_Haw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="2d72bd51-5bf1-47f1-be65-ec501d5c56df" CvElementArea="12, 59, 172, 25" CvType="InputBox" DesignTimeRectangle="12, 60, 170, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Category' aria-role='combobox' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Category' aria-role='combobox' type='text' class='IccComboBoxInput' /&gt;" Guid="c5c4db0b-ba48-4137-9f0d-a24007694cde" IsResponsive="True" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2d72bd51-5bf1-47f1-be65-ec501d5c56df" CvTextArea="13, 44, 54, 14" CvTextArgument="Category" CvType="Text" DesignTimeRectangle="14, 44, 52, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='field-label' tag='LABEL' aaname='' check:text='Category' /&gt;" Guid="d1f136a6-febe-443e-b81f-d0ca07233417" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e6e554681833d8ee5d87ec9e8b7ba9e2.png" xmlns="">0M8Q1Gey9o0OnMisjX4xnrA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

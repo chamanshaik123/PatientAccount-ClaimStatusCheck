@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pWbvobbrO0GVAi1epXzJRQ" Reference="0OjwGQNFZEimLaR_hhDcng/P7hwGhHAoEO2jh9Lxjl5IQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="9b5f8983-6047-487e-a688-18cdbbf22034" DesignTimeRectangle="719, 108, 84, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='region-select' tag='DIV' class='UserRegionsMenu__trigger' parentclass='NavDropdown__trigger' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='region-select' tag='DIV' class='UserRegionsMenu__trigger' parentclass='NavDropdown__trigger' type='' /&gt;" Guid="57dbecee-1dfb-4981-ac02-889b83d922e4" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="712f214e662b79745f70bbecd83c7a66.png" xmlns="">0IVk4mTQ-Qkas4T8NRrGLDw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

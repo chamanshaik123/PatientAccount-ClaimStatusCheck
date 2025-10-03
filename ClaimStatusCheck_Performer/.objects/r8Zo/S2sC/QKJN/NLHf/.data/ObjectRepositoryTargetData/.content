@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MPrOC9nMa0SF1E0L8N5JwQ" Reference="0OjwGQNFZEimLaR_hhDcng/NLHfqD2jEEq4BDv4tYScbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="e359a6ae-1dbd-40b8-9d6d-dbd093ae1102" DesignTimeRectangle="37, 488, 386, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl aria-role='listbox' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='providerSelect' tag='DIV' class='provider-select__control css-1vczugn-control' type='' aaname='' /&gt;" Guid="292f4088-b17b-457b-82d0-322ba553883e" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="37, 467, 108, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerExpressEntry-label' tag='LABEL' type='' class='' aaname=' Select a Provider' check:innerText='* Select a Provider' /&gt;" Guid="15e89e2e-7fb7-429c-bbe9-a8a70bb76494" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a084be1adf3e6c8ac663efe5baf4750f.png" xmlns="">0ke1_FUyAWkKOuOlD5GQLwQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

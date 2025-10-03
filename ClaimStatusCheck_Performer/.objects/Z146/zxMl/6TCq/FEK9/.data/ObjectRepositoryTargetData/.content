@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SpwygmnYYkOuLSBZdPR1Ew" Reference="0OjwGQNFZEimLaR_hhDcng/FEK9UEsXwEykPZ-4zkUs2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="07e6f0e3-aa72-4162-93e2-beaca70072f4" DesignTimeRectangle="272, 292, 183, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='listbox' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Add New Filter Preference' class='IccComboBoxPopupTableCell' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='listbox' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Add New Filter Preference' class='IccComboBoxPopupTableCell' type='' check:text='Add New Filter Preference' /&gt;" Guid="781bf6a5-b629-4b26-85b1-8afb6c121fc1" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [PROD 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="07e6f0e3-aa72-4162-93e2-beaca70072f4" CvTextArea="273, 276, 63, 12" CvTextArgument="Quick Filter" CvType="Text" DesignTimeRectangle="272, 274, 183, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='listbox' tag='TABLE' /&gt;&lt;webctrl type='' class='IccComboBoxPopupTableCell' tag='TD' aaname='Quick Filter' check:text='Quick Filter' /&gt;" Guid="f8964776-29d8-4bba-99cd-e5b82e07f496" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9afb7a086b9dec1a3887ed466236a476.png" xmlns="">0C4uJrp3EBkia6L16Nh6tDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zDVjOEJjkU-0Gj7Eqp4Snw" Reference="0OjwGQNFZEimLaR_hhDcng/9KnlxSsuUEeuER1sV2gCLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="5d057fda-e60b-42ff-a953-0571e92efbcf" DesignTimeRectangle="902, 509, 131, 43" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='claimsTable' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='${0}' colName='Billed Amount' /&gt;&quot;, in_BillingAmount)]" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='claimsTable' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='$864.00' colName='Billed Amount' type='' class='align-middle py-2 text-center cursor-pointer' check:text='$864.00' /&gt;" Guid="5a76a734-a4af-4502-b827-52f3c1306014" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="72cf8b2a3af2007eb8041162d8ae32f4.png" xmlns="">0M4Hxuz4E5kCliLc1BTKkOQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="261.03" IsVariable="False" Name="in_BillingAmount" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

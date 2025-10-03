@@ -1,0 +1,14 @@
+﻿{
+  "Name": "RPA",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "3UwMPDLB90GB3YxK7xm01w",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/3UwMPDLB90GB3YxK7xm01w",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/M4fpAwPhvk66j2dM5vwSAQ",
+  "Created": "2025-05-19T11:43:56.8571164Z",
+  "Updated": "2025-05-19T11:43:56.8571164Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "DENIED",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "kOfbm_mWsUKbcGaLtxvrwQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/kOfbm_mWsUKbcGaLtxvrwQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/IZZ_Fhld6k2us9bvN05C4Q",
+  "Created": "2025-05-15T10:03:09.9561503Z",
+  "Updated": "2025-05-15T10:03:09.9561503Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

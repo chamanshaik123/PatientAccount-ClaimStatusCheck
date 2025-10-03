@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="E-3kWmZhgEyjS0ahw3dGgQ" Reference="0OjwGQNFZEimLaR_hhDcng/n8f6RL6iA0y-UhunIsWdqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="0e091872-9a49-454b-9eed-5d8ebfb5da64" DesignTimeRectangle="398, 469, 29, 29" DesignTimeScaleFactor="0.800000011920929" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='providerSelect' tag='DIV' innertext='Toggle Select Options' parentclass='provider-select__control *-control' /&gt;" Guid="9ce66f9c-936f-4629-9f46-0435e01c6daa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f08a22c846403bda0a526b850fbaae77.png" xmlns="">0Ldl_BIGV8Uu7L7ZZQk9anw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

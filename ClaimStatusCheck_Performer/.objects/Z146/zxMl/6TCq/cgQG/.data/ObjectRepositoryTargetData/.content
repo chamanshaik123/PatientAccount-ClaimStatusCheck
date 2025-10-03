@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GUvCV7tLQEikuOydM83xIQ" Reference="0OjwGQNFZEimLaR_hhDcng/cgQGaNJWSUiFOqWe_e0IiQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="0a67305c-d491-45ec-8bc3-89a5ac001f97" DesignTimeRectangle="496, 254, 185, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' colName='Name' id='ctlIccTextBox17Text__' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' colName='Name' id='ctlIccTextBox17Text__' type='text' class='IccTextBoxReqWarning' aaname='' /&gt;" Guid="8b9f6cba-8907-411b-8528-373613b20f40" IsResponsive="True" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="0a67305c-d491-45ec-8bc3-89a5ac001f97" CvTextArea="495, 233, 34, 12" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="496, 233, 567, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Name' parentid='worklistingFilterUI' type='' class='gwt-Label CUI-BedRequestRequiredText' tag='DIV' check:text='Name' /&gt;" Guid="2a79e05a-f42b-4ada-a0e7-93efa696fb57" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9f83d8eed68bbfdb61e38bed59dbad33.png" xmlns="">0DJVJlxYFjEGaiVAGVPiEVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

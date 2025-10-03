@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2GgqMPn2qEamWL53pTs-jQ" Reference="0OjwGQNFZEimLaR_hhDcng/Ots4j-5IzU2e1Fi-3O7GZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="242, 166, 28, 22" DesignTimeScaleFactor="1" ElementType="Cell" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TR' aaname='*{0}*' /&gt;&lt;webctrl tableCol='2' tag='TD' parentclass='selected CUI-ExpandedBlindRow CUI-Grid*Row' /&gt;&quot;, SelectorReference)]" FuzzySelectorArgument="&lt;webctrl tag='TR' aaname='*SFUPGRADESSI, REMOVEDENTAL       Aetna    Aetna  1  12/20/2024  12/20/202412/20/2024126849.00&amp;#x9;04/16/2025  Aging Ins*' /&gt;&lt;webctrl type='' tag='TD' parentclass='selected CUI-ExpandedBlindRow CUI-GridRow' class='CUI-GridColumn' aaname='' /&gt;" Guid="83f69746-8f5c-4481-a5e3-69226c6ac163" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="69136112761db9e7f8327aeb6a5aaaf0.png" xmlns="">0D_vugXz5kEyo6nJ5hxFEjw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="SelectorReference" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

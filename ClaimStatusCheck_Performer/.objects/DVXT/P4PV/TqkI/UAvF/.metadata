@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Log off",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "UAvFiqNYWkqvXFNmR2dSjQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/UAvFiqNYWkqvXFNmR2dSjQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/TqkIZjEJAkKsBC-hMUcJ5g",
+  "Created": "2025-05-05T05:29:09.1719655Z",
+  "Updated": "2025-05-05T05:29:09.1719655Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

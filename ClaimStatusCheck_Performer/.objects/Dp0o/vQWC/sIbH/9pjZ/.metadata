@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cancel",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9pjZNBr5u0SXBEXV5ybqlQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/9pjZNBr5u0SXBEXV5ybqlQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/sIbHAi1fWU6P_l6ZZ-EhUg",
+  "Created": "2025-06-23T16:05:22.3349753Z",
+  "Updated": "2025-06-23T16:05:22.3349753Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

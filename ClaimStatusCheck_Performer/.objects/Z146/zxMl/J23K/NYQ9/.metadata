@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CAMC Blue Cross at Risk",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "NYQ9qcZwo0m2NLZBcQOwQw",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/NYQ9qcZwo0m2NLZBcQOwQw",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/J23Kico52keobbAEQ_nB2g",
+  "Created": "2025-06-30T13:06:43.6917169Z",
+  "Updated": "2025-06-30T13:06:43.6917169Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3uQ64KVSmkaq1hKXxxfkKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="dbc1d27f-5fea-4542-bd23-10d682388dc2" DesignTimeRectangle="653, 377, 591, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerNpi' tag='INPUT' aaname='*Provider NPI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerNpi' tag='INPUT' aaname='*Provider NPI' type='text' class='is-untouched av-valid form-control' /&gt;" Guid="f376e8eb-a8ff-468b-bf56-85ee52e714fe" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="dbc1d27f-5fea-4542-bd23-10d682388dc2" CvTextArea="651, 358, 85, 14" CvTextArgument="* Provider NPI" CvType="Text" DesignTimeRectangle="653, 357, 82, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerNpi-label' tag='LABEL' type='' class='' aaname=' Provider NPI' check:innerText='* Provider NPI' /&gt;" Guid="755127ac-1e0c-4e6d-83a4-9095ab1cbe51" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6d7475b5580a8f914a3bd70b5ea78e68.png" xmlns="">06PQHKAPTs0m98xrtBaBDog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

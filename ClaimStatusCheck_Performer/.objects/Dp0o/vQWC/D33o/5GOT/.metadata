@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Patient and Insured Inf…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "5GOTrzfu3EC7R72UgmDvwA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/5GOTrzfu3EC7R72UgmDvwA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg",
+  "Created": "2025-05-12T07:25:52.3042665Z",
+  "Updated": "2025-05-12T07:25:52.3042665Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

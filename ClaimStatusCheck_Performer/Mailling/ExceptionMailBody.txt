@@ -1,0 +1,11 @@
+
+<p></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">Hi Team,</span></span></p>
+<p class="MsoNormal" style="margin: 0px;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">Exception report for CAMC | Claim Status Check Process &ndash; Exception Report</span></span></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">Receivable Group ID: NA &nbsp;</span></span></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">&lt;Exception Message&gt;</span></span></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">&nbsp;</span></span></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">* This message was sent from an automated process. Please do not reply to this message.&nbsp;</span></span></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">&nbsp;</span></span></p>
+<p class="MsoNormal" style="margin: 0px;"><span lang="EN-US"><span style="color: #7f7f7f;">Thanks,<br />Claim Status Check BOT</span></span></p>

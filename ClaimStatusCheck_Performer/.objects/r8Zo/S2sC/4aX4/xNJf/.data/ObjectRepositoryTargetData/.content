@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="93jklhyx2UCXr5L_gDh9ZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/spc/errors" CVScreenId="1234b9a8-7742-4ccc-a4a4-0db725e1681f" DesignTimeRectangle="57, 435, 1182, 23" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' parentclass='card-title' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' parentclass='card-title' type='' class='text-center error-title mb-3' aaname='Oops! Something&amp;apos;s wrong here...' check:text='Oops! Something&amp;apos;s wrong here...' /&gt;" Guid="118852b5-4a22-41f9-ad1e-1982db16d993" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Error' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="271d1068ffa38fa6c5f15e6aed3e3196.png" xmlns="">0CK5eMZVjkU6hf3WdbOGTDg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

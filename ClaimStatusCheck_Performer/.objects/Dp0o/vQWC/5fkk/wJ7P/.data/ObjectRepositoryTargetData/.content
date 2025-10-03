@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cqx7jTnsekuDC0HQbHyC3w" Reference="0OjwGQNFZEimLaR_hhDcng/wJ7P-Oxutk-35GGGQVQt7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="9aef125f-25a9-4757-b0b9-1df1b6b31e4c" CvElementArea="246, 473, 14, 16" CvType="ArrowButton" DesignTimeRectangle="242, 469, 28, 22" DesignTimeScaleFactor="1" ElementType="Cell" FullSelectorArgument="&lt;webctrl tag='TR' aaname='  SFUPGRADEFOUR, SCRIPTSIX       Hghmrk Bl Crss Bl Sh    Hghmrk Bl Crss Bl Sh  1  12/16/2024  12/17/202412/17/2024135352.00&amp;#x9;04/15/2025  Aging Ins' /&gt;&lt;webctrl tableCol='2' tag='TD' parentclass='CUI-GridAltRow' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TR' aaname='  SFUPGRADEFOUR, SCRIPTSIX       Hghmrk Bl Crss Bl Sh    Hghmrk Bl Crss Bl Sh  1  12/16/2024  12/17/202412/17/2024135352.00&amp;#x9;04/15/2025  Aging Ins' /&gt;&lt;webctrl type='' tag='TD' parentclass='CUI-GridAltRow' class='CUI-GridColumn' aaname='' /&gt;" Guid="3ab858c6-8555-4f6f-b146-2e9721f67ffc" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [TRAIN 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="b4348793ccb4ecd45e1360c22b0f0ef7.png" xmlns="">0PRcAllwe6k2CwoClBqsldA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

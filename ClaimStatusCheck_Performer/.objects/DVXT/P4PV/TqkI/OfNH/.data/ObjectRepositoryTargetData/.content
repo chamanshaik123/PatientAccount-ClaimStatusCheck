@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gt_gXHWVaEaO4G5wpx-4cQ" Reference="0OjwGQNFZEimLaR_hhDcng/OfNHWsV8qUWCXnZwFQhw4A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="1a62ef80-ccce-4851-a30e-c9a6584db29c" CvTextArea="560, 424, 184, 16" CvTextArgument="Incorrect user name or password" CvType="Text" DesignTimeRectangle="561, 424, 183, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='alert' parentid='explicit-auth-screen' tag='DIV' aaname='Incorrect user name or password' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='alert' parentid='explicit-auth-screen' tag='DIV' aaname='Incorrect user name or password' type='' class='standaloneText label error' check:text='Incorrect user name or password' /&gt;" Guid="4771d753-4c62-4fec-8f9c-2573ca617cce" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2ffbb50988e83c9927027aaa5e0e4916.png" xmlns="">0L8GnXT_OAkyMnNTwUcQi3w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

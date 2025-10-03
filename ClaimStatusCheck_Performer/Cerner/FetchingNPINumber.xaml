@@ -1,0 +1,1165 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FetchingNPINumber" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="NPI Number fetched from Revelate" Name="out_NPI" Type="OutArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Start date and End Date of claim period" Name="out_ClaimPeriod" Type="OutArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Member Id fetched from Cerner used to search patient details in Availity" Name="out_MemberId" Type="OutArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Amount fetched from RG details page which is used to crossverify the Claim Status in Availity" Name="out_BillAmount" Type="OutArgument(x:String)" />
+    <x:Property Name="in_HealthPlanName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>FetchingNPINumber_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:Annotation.AnnotationText="Module used to fetch the details of patient from Cerner which are used in Availity module to fetch Claim status&#xA;Below are the details fetched in this module&#xA;1. NPI Number&#xA;2. Receivable group Id&#xA;3. Date Of Birth&#xA;4. Claim Start Date and End Date&#xA;5. Member ID" DisplayName="FetchingNPINumber" sap:VirtualizedContainerService.HintSize="688,4292" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message- Fetching Patient details" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Fetching Patient details&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="IE Cerner Soarian (2)" sap:VirtualizedContainerService.HintSize="688,4140" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="654,3826" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="BeginDate" />
+              <Variable x:TypeArguments="x:String" Name="EndDate" />
+              <Variable x:TypeArguments="x:String" Name="ClaimFormatNumber" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="old code- Activites in this were moved to opening worklist workflow" sap:VirtualizedContainerService.HintSize="616,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text 'Patient Date of Birth'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_DOB]" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="373a92c4-63d9-4aa2-aa31-5cf9ce3767bd" ContentHash="NQbjleHFCkyBmmCluyxCag" DesignTimeRectangle="416, 241, 318, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Patient Date of Birth' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='TD' colName='Patient Name' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='blind' tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-BaseFont' tag='TD' /&gt;" Guid="23d8dc26-f348-422d-8be0-6b95ca0f1edc" ImageBase64="" InformativeScreenshot="7f16218a9aab7abf3e35f6662379875c.png" Reference="0OjwGQNFZEimLaR_hhDcng/m8ZTDLbzUEuG4knvT58ELw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="373a92c4-63d9-4aa2-aa31-5cf9ce3767bd" CvTextArea="306, 242, 110, 13" CvTextArgument="Patient Date of Birth" CvType="Text" DesignTimeRectangle="216, 241, 200, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='blind' tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-ReadOnlyLabel' tag='TD' aaname='Patient Date of Birth' check:text='Patient Date of Birth' /&gt;" Guid="adcaca1f-a742-405e-97b1-3a08f5467af0" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text 'Receivable Group ID'" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_ReceviableGroupID]" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="3a27801f-52da-4bc2-97f7-5962b7f3c821" ContentHash="hCN7u2OYcketGpDRfqjCLA" DesignTimeRectangle="933, 260, 47, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='blind' tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='blind' tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' type='' class='' /&gt;" Guid="f8713b7c-733b-40b9-8cb9-fc21330c795f" ImageBase64="" InformativeScreenshot="a02683943c443e43022767c6bcdcf834.png" Reference="0OjwGQNFZEimLaR_hhDcng/_exIqAUGwU6oGus6xj5Rhg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="3a27801f-52da-4bc2-97f7-5962b7f3c821" CvTextArea="808, 259, 110, 13" CvTextArgument="Receivable Group ID" CvType="Text" DesignTimeRectangle="738, 258, 180, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-ReadOnlyLabel' tag='TD' aaname='Receivable Group ID' check:text='Receivable Group ID' /&gt;" Guid="1b105801-1027-4d01-ac78-5a58119d8ab4" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Recevable Group Id" sap:VirtualizedContainerService.HintSize="616,57" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="7ff0cf4a-ab5d-4baf-8efb-2894dae28c06" ContentHash="OJFJPa1LlEekVywJD_F1pQ" DesignTimeRectangle="933, 231, 47, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TBODY' aaname='*ZZREVELATE, ZZCLAIMID*Cigna*04/22/2025*63,070.00**' /&gt;&lt;webctrl tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' type='' class='' aaname='1279666' check:text='1279666' /&gt;" Guid="0d34d681-7e1c-4076-8035-12a14dd3966b" InformativeScreenshot="52f78f8b30d8e04824e62fe2820b8a61.png" Reference="0OjwGQNFZEimLaR_hhDcng/1YrzKI0hrkquFfuHKMLzjw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="7ff0cf4a-ab5d-4baf-8efb-2894dae28c06" CvTextArea="808, 230, 110, 13" CvTextArgument="Receivable Group ID" CvType="Text" DesignTimeRectangle="738, 229, 180, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-ReadOnlyLabel' tag='TD' aaname='Receivable Group ID' check:text='Receivable Group ID' /&gt;" Guid="6e719946-6ec9-42ce-b4a2-7bd1db2183ac" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="616,2012" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <ui:RetryScope DisplayName="Retry Scope- Click Bill Claim Number" sap:VirtualizedContainerService.HintSize="578,1752" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action- Click Bill Claim Number" sap:VirtualizedContainerService.HintSize="536,1577" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="sd:DataTable" Name="dt_Billid" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Billid]" DisplayName="Extract Table Data - Bill/Claim id Table" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column name='Column0' attr='fulltext' exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="502,189" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable ContentHash="9LaJqNXDYESgFn2TikSHxg" DesignTimeRectangle="536, 478, 462, 336" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='contenttablectlClaimsGuBillGrid_v2' tableCol='1' tableRow='1' tag='DIV' /&gt;" Guid="43ace54c-d860-4fc4-9d31-e7a713793d71" InformativeScreenshot="58b86cb8979cba14931866ca93ba184a.png" Reference="wB-cIpNj1U6iAG-a8aVYrw/yeNR_70sT0KZza06lou2yw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                          </uix:NExtractData.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NExtractData>
+                        <If Condition="[dt_Billid.Rows.Count&gt;0]" DisplayName="If -Check Bil/Cliam Row" sap:VirtualizedContainerService.HintSize="502,1280" sap2010:WorkflowViewState.IdRef="If_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,762" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="strClaimidRow" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message- Bill number found" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[dt_Billid.RowCount.ToString+&quot; Bill numbers found&quot;]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:LogMessage>
+                              <Assign DisplayName="Assign - Claim id Row" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strClaimidRow]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[dt_Billid.Rows.Count.ToString]</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                              <uix:NGetText DelayBefore="3" DisplayName="Get Text- Amount" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_BillAmount]" Timeout="5" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable CVScreenId="5001743c-8c11-4c2d-8533-b41fefdbe922" ContentHash="LxKBh2IsfUaAvrZ9SG2-mA" DesignTimeRectangle="964, 474, 98, 18" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='ClaimsGuBillGrid_v2-cell-ctlTotalAmountNumericEdit_v2-icc*' tableCol='1' tableRow='1' tag='DIV' class='IccGridCellValue' idx='{0}' /&gt;&quot;, strClaimidRow)]" FuzzySelectorArgument="&lt;webctrl parentid='ClaimsGuBillGrid_v2-cell-ctlTotalAmountNumericEdit_v2-icc1' tag='DIV' type='' class='IccGridCellValue' /&gt;" Guid="3c28aec4-0643-49f0-8687-4cab2c9b6b24" ImageBase64="" InformativeScreenshot="9714f7222f708dc323fc828ed37c7bfb.png" Reference="0OjwGQNFZEimLaR_hhDcng/MaTRhYX-CEGUiDRvlEd2kg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[out_BillAmount]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[out_BillAmount.Replace(")", "").Trim]</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click- Bill number" sap:VirtualizedContainerService.HintSize="434,110" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0aff8f6f-aef1-4ba7-b565-2e90b33e952b" Selector="[string.Format(&quot;&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;&lt;webctrl aria-role='link' tableCol='1' tableRow='1' tag='DIV' idx='{0}' /&gt;&quot;, strClaimidRow)]" WaitForReady="COMPLETE">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Click>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message- No bill number found" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;No row found for bill number&quot;]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:LogMessage>
+                              <Throw DisplayName="Throw- Bill number not found" Exception="[new BusinessRuleException(&quot;Bill Number not found&quot;)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Throw>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="502,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click - Bill/Claim Number" sap:VirtualizedContainerService.HintSize="502,48" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="ea23078a-6498-4616-981c-8f5fd38a8888" ContentHash="y3NYefNOxUexTqgvMs3ZuQ" DesignTimeRectangle="663, 371, 154, 18" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='ClaimsGuBillGrid_v2-cell-ctlExternalIdReadOnly_v2-icc0' tableCol='1' tableRow='1' tag='DIV' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ClaimsGuBillGrid_v2-cell-ctlExternalIdReadOnly_v2-icc0' type='' class='IccGridCellValue' tag='DIV' aaname='S127966600101' check:text='S127966600101' /&gt;" Guid="982e0f86-f667-47b0-9f81-5f83128db6cd" InformativeScreenshot="f99326ebff400ebe0bb80ac02575fc8c.png" Reference="0OjwGQNFZEimLaR_hhDcng/gNdRdx6joE2oFheglK0pfw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NClick>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:RetryScope>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="582,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Throw DisplayName="Throw- Bill number not found" Exception="[new BusinessRuleException(&quot;Bill Number not found&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Throw>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <uix:NGetText DisplayName="Get Text -Claim format Number" sap:VirtualizedContainerService.HintSize="620,57" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[ClaimFormatNumber]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="deb32db1-5f43-4a85-ab04-97b21c9c8b65" ContentHash="jrK1Z-KBRkmtteeVT3S3JA" DesignTimeRectangle="379, 238, 28, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tableCol='2' tag='LABEL' id='ctlClaimFormat_HyperLink' rowName='Claim format: ' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' id='ctlClaimFormat_HyperLink' rowName='Claim format: ' class='truncated-label link' aaname='' /&gt;" Guid="5af083d4-61c2-4992-889e-095fc1bd7f9d" ImageBase64="" InformativeScreenshot="02a5e869457e708c18b8bb8a717db484.png" Reference="0OjwGQNFZEimLaR_hhDcng/ctcyzOAj00W3LgfteTCPvg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="deb32db1-5f43-4a85-ab04-97b21c9c8b65" CvTextArea="225, 238, 72, 12" CvTextArgument="Claim format:" CvType="Text" DesignTimeRectangle="226, 239, 149, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='readonly-field-label' tag='LABEL' aaname='' check:text='Claim format:' /&gt;" Guid="ca8a97ee-657f-42d5-b84b-431472a1fbf2" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <If Condition="[ClaimFormatNumber.Trim.ToLower.EndsWith(&quot;p&quot;) Or&#xA;ClaimFormatNumber.Trim.ToLower.EndsWith(&quot;i&quot;)]" DisplayName="If- Check if claim format Number ending with P or I" sap:VirtualizedContainerService.HintSize="620,1417" sap2010:WorkflowViewState.IdRef="If_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then- Move into claim format number" sap:VirtualizedContainerService.HintSize="586,1222" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Claim format number" sap:VirtualizedContainerService.HintSize="552,57" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CVScreenId="c05ded3c-c463-492c-a6e4-cd6ada2140dd" ContentHash="LVzCRobIQEyCvXc9D9CtBg" DesignTimeRectangle="379, 243, 23, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' id='ctlClaimFormat_HyperLink' rowName='Claim format: ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' id='ctlClaimFormat_HyperLink' rowName='Claim format: ' type='' class='truncated-label link' aaname='' check:text='837I' /&gt;" Guid="68ffa8ad-04ad-49c4-a5ef-ff11019e87c3" InformativeScreenshot="64fd4ec076fcbd3853627f4b9a3c6582.png" Reference="0OjwGQNFZEimLaR_hhDcng/fiWylvn550W_WoWcAmXVcQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c05ded3c-c463-492c-a6e4-cd6ada2140dd" CvTextArea="225, 243, 72, 12" CvTextArgument="Claim format:" CvType="Text" DesignTimeRectangle="226, 244, 149, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='readonly-field-label' tag='LABEL' aaname='' check:text='Claim format:' /&gt;" Guid="b3cd14e0-015f-4f40-8da4-d670e77bec68" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text - Claim Period" sap:VirtualizedContainerService.HintSize="552,57" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_ClaimPeriod]" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="1377ca91-3147-466a-8b23-401f534745ed" ContentHash="0UhByHaNAUiE6gZCmjUbdw" DesignTimeRectangle="854, 210, 134, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='ctlPeriodDate_ControlCollection' tag='DIV' parentid='ctlColumn2_ControlGroup' rowName='Claim period:  ' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlPeriodDate_ControlCollection' tag='DIV' parentid='ctlColumn2_ControlGroup' rowName='Claim period:  ' type='' class='' /&gt;" Guid="1e1b0ba2-90fb-48f9-b410-a00ae6bad9ca" ImageBase64="" InformativeScreenshot="d4d1167c8337b9c8b488a5d6b24bff0b.png" Reference="0OjwGQNFZEimLaR_hhDcng/wfygogQ46EGRtyg49M6oEA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <If Condition="[ClaimFormatNumber.Trim.ToLower.EndsWith(&quot;i&quot;)]" DisplayName="If- Institution payaer" sap:VirtualizedContainerService.HintSize="552,1048" sap2010:WorkflowViewState.IdRef="If_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then- 837i" sap:VirtualizedContainerService.HintSize="518,862" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState DisplayName="Check App State - insurance Tab" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Timeout="10" Version="V4">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears- Insurance Tab" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insurance Dropdown" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_28" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="0771657f-94d2-40b7-8ea0-fadc1ba4748a" ContentHash="K5fqOV5TqUKb80JCuYg26g" DesignTimeRectangle="217, 300, 12, 12" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Insurance*' colName='Insurance*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="2eb4ab41-1d1d-46f7-83c4-40704c719cdb" InformativeScreenshot="44ba3d3b18d6e623c75e01e8ee02b631.png" Reference="0OjwGQNFZEimLaR_hhDcng/LxOPuGDyGUSEaMaxx7fqjA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="0771657f-94d2-40b7-8ea0-fadc1ba4748a" CvTextArea="235, 299, 114, 14" CvTextArgument="Insurance (FL 50-65)" CvType="Text" DesignTimeRectangle="236, 299, 835, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Insurance (FL 50-65)' type='' class='gwt-Label' tag='DIV' check:text='Insurance (FL 50-65)' /&gt;" Guid="0570cb8c-6ce7-4848-820a-5372b16fd85e" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear- Insurance Tab" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="0dca6be2-13d9-472c-95fe-2b384e976785" ContentHash="9xdDCNt2NE2ZePmZG53WcA" DesignTimeRectangle="1226, 627, 49, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' type='button' class='navigationButton' check:text='Back' /&gt;" Guid="932cb1c4-a956-4aaf-a867-a1f96fbced60" InformativeScreenshot="c3f44fbfd54bdfcdb9925eb77f044696.png" Reference="0OjwGQNFZEimLaR_hhDcng/VTkDvf2VxEC6DBwz6EBQvA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_30" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="5339514d-beba-4e1e-b449-e079f780e713" ContentHash="eJ4O7vt0AEuV0ZPEnfpJGQ" DesignTimeRectangle="1224, 627, 51, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' /&gt;" FuzzySelectorArgument="&lt;webctrl id='doneButtonType2' type='button' class='navigationButton' tag='BUTTON' aaname='Done' check:text='Done' /&gt;" Guid="a21e939f-d7c1-41da-9159-f4ca0032db33" InformativeScreenshot="a1df252f358232206ea542458e844f97.png" Reference="0OjwGQNFZEimLaR_hhDcng/KGAhv80G-EiXIPlehle6fw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done(1)'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_31" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="d701f512-4e34-43a3-8845-8c08b38cb6fb" ContentHash="xoz1hIziBkKmXYG9lCWBHQ" DesignTimeRectangle="1224, 627, 51, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' /&gt;" FuzzySelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' type='button' class='navigationButton' check:text='Done' /&gt;" Guid="e0345f00-5bce-473e-bb9f-334a5ec00921" InformativeScreenshot="a1df252f358232206ea542458e844f97.png" Reference="0OjwGQNFZEimLaR_hhDcng/DaJ-KuYnPkqqdRpTWlWiQg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <Throw DisplayName="Throw- Insurance tab not found" Exception="[new BusinessRuleException(&quot;Insurance Tab not found&quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_11" />
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable CVScreenId="7b35caaf-a7a4-4db9-ba4c-719e516fdddb" ContentHash="zt5-HdLs0UStFykspXvQzQ" DesignTimeRectangle="236, 310, 835, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Insurance*' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Charge Line Information (Box 24)' tag='DIV' type='' class='gwt-Label' check:text='Charge Line Information (Box 24)' /&gt;" Guid="7fce4019-e5ee-4eb3-a7f7-0084c36e18e3" InformativeScreenshot="495dd5017b563598012e3283639726e4.png" Reference="0OjwGQNFZEimLaR_hhDcng/BOkOmybHw06-LgCv_pBn2w" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                        <uix:NGetText DisplayName="Get Text- NPI Number" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_NPI]" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable CVScreenId="90635451-2a3c-4424-9e35-b1f5914dfdd8" ContentHash="6RudmiXsY0u4-6CFSOE8Tw" DesignTimeRectangle="930, 322, 129, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tableCol='2' tag='DIV' parentclass='Claim-GridTRB' rowName='56 NPI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' parentclass='Claim-GridTRB' rowName='56 NPI' class='gwt-Label Claim-Text' /&gt;" Guid="5393de2e-c2e0-4526-9f98-7a2db25b0d85" ImageBase64="" InformativeScreenshot="1b8052693b372f6e445f1e323362f29c.png" Reference="0OjwGQNFZEimLaR_hhDcng/7oql0ddpskqQpNMIUxo3wQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <Sequence DisplayName="fetching member ID" sap:VirtualizedContainerService.HintSize="552,1024" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="dt_temp" />
+                            <Variable x:TypeArguments="sd:DataColumn" Name="MemberIdColumn" />
+                            <Variable x:TypeArguments="x:String" Name="variable2" />
+                            <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_PayerName" />
+                            <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_MemberID" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_PayerName]" DisplayName="Extract Table Data- Payer Names" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table columns_name_source='Longest' get_empty_columns='1' get_columns_name='1'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="219, 342, 182, 125" DesignTimeScaleFactor="1" ElementType="Table" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' colName='*50 PAYER NAME' /&gt;" Guid="337a3dc1-81a0-49f4-b522-89d4f2b45e04" InformativeScreenshot="8a47e94632cdba9bcb2e34871296030c.png" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:FilterDataTable DataTable="[dt_PayerName]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="334,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_PayerName]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable.Filters>
+                              <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                </ui:FilterOperationArgument>
+                              </scg:List>
+                            </ui:FilterDataTable.Filters>
+                            <ui:FilterDataTable.SelectColumns>
+                              <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                <x:Null />
+                              </scg:List>
+                            </ui:FilterDataTable.SelectColumns>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:FilterDataTable>
+                          <If Condition="[dt_PayerName.Rows.Count=1]" DisplayName="If- only one membe ID present" sap:VirtualizedContainerService.HintSize="518,714" sap2010:WorkflowViewState.IdRef="If_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text- Member Id" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_MemberId]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable CVScreenId="d8b846dc-932d-46ba-b9bf-6047cc07ad40" ContentHash="9u80fFWEnk-VdRuKHd5_Jg" DesignTimeRectangle="496, 454, 234, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='60 INSURED&amp;apos;S UNIQUE ID' rowName='60 INSURED&amp;apos;S UNIQUE ID' /&gt;&lt;nav up='6' /&gt;&lt;webctrl tag='DIV' parentclass='Claim-GridR' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Label Claim-Text' tag='DIV' /&gt;" Guid="cf8fe6f0-6517-4399-ab7f-804cc1e8c907" ImageBase64="" InformativeScreenshot="bd9d2087ce097bfa3731928eba81ab6a.png" Reference="0OjwGQNFZEimLaR_hhDcng/v1QyfPcoqUutlJmeZUxIsQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,445" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_MemberID]" DisplayName="Extract Table Data- Member ID's" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table columns_name_source='Longest' get_empty_columns='1' get_columns_name='1'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                  <uix:NExtractData.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="496, 492, 235, 125" DesignTimeScaleFactor="1" ElementType="Table" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' colName='*60 INSURED*UNIQUE ID' parentclass='content' /&gt;" Guid="3ee9ae9e-7058-495f-914d-44259650a4f9" InformativeScreenshot="fa1c794df84b2c38fff1995d37c029b9.png" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NExtractData.Target>
+                                </uix:NExtractData>
+                                <ui:FilterDataTable DataTable="[dt_PayerName]" DisplayName="Filter Data Table- filter with payer name" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_temp]" SelectColumnsMode="Remove">
+                                  <ui:FilterDataTable.Filters>
+                                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                      <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                        <ui:FilterOperationArgument.Column>
+                                          <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                                        </ui:FilterOperationArgument.Column>
+                                        <ui:FilterOperationArgument.Operand>
+                                          <InArgument x:TypeArguments="x:String">[in_HealthPlanName]</InArgument>
+                                        </ui:FilterOperationArgument.Operand>
+                                      </ui:FilterOperationArgument>
+                                    </scg:List>
+                                  </ui:FilterDataTable.Filters>
+                                  <ui:FilterDataTable.SelectColumns>
+                                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                      <x:Null />
+                                    </scg:List>
+                                  </ui:FilterDataTable.SelectColumns>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:FilterDataTable>
+                                <If Condition="[dt_temp.Rows.Count=0]" DisplayName="If- check if records available with the payer name" sap:VirtualizedContainerService.HintSize="450,271" sap2010:WorkflowViewState.IdRef="If_5">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Throw DisplayName="Throw- Payer name mismatch" Exception="[new BusinessRuleException(&quot;No matching Payer Nname found in Claim Overview page&quot;)]" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Throw_9" />
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <If Condition="[dt_temp.Rows.Count&gt;1]" DisplayName="If- check if multiple records available with same payer name" sap:VirtualizedContainerService.HintSize="502,675" sap2010:WorkflowViewState.IdRef="If_4">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Throw DisplayName="Throw- Multiple Payers" Exception="[new BusinessRuleException(&quot;Mutiple payers found in Claim Overview page&quot;)]" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Throw_10" />
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,489" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:Int32" Name="LookupValue" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LookupDataTable CellValue="{x:Null}" LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[dt_PayerName]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="434,324" sap2010:WorkflowViewState.IdRef="LookupDataTable_1" LookupValue="[in_HealthPlanName]" RowIndex="[LookupValue]">
+                                              <ui:LookupDataTable.LookupColumnIndex>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="0" />
+                                                </InArgument>
+                                              </ui:LookupDataTable.LookupColumnIndex>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:LookupDataTable>
+                                            <Assign DisplayName="Assign- out_MemberId" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[out_MemberId]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[dt_MemberID.Rows(LookupValue)(0).tostring]</InArgument>
+                                              </Assign.Value>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Assign>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                        <ui:CommentOut DisplayName="old code" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NCheckState DisplayName="Check App State - insurance Tab" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Timeout="10" Version="V4">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears- Insurance Tab" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insurance Dropdown" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="0771657f-94d2-40b7-8ea0-fadc1ba4748a" ContentHash="K5fqOV5TqUKb80JCuYg26g" DesignTimeRectangle="217, 300, 12, 12" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Insurance*' colName='Insurance*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="2eb4ab41-1d1d-46f7-83c4-40704c719cdb" InformativeScreenshot="44ba3d3b18d6e623c75e01e8ee02b631.png" Reference="0OjwGQNFZEimLaR_hhDcng/LxOPuGDyGUSEaMaxx7fqjA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CVScreenId="0771657f-94d2-40b7-8ea0-fadc1ba4748a" CvTextArea="235, 299, 114, 14" CvTextArgument="Insurance (FL 50-65)" CvType="Text" DesignTimeRectangle="236, 299, 835, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Insurance (FL 50-65)' type='' class='gwt-Label' tag='DIV' check:text='Insurance (FL 50-65)' /&gt;" Guid="0570cb8c-6ce7-4848-820a-5372b16fd85e" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear- Insurance Tab" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="0dca6be2-13d9-472c-95fe-2b384e976785" ContentHash="9xdDCNt2NE2ZePmZG53WcA" DesignTimeRectangle="1226, 627, 49, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' type='button' class='navigationButton' check:text='Back' /&gt;" Guid="932cb1c4-a956-4aaf-a867-a1f96fbced60" InformativeScreenshot="c3f44fbfd54bdfcdb9925eb77f044696.png" Reference="0OjwGQNFZEimLaR_hhDcng/VTkDvf2VxEC6DBwz6EBQvA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="5339514d-beba-4e1e-b449-e079f780e713" ContentHash="eJ4O7vt0AEuV0ZPEnfpJGQ" DesignTimeRectangle="1224, 627, 51, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' /&gt;" FuzzySelectorArgument="&lt;webctrl id='doneButtonType2' type='button' class='navigationButton' tag='BUTTON' aaname='Done' check:text='Done' /&gt;" Guid="a21e939f-d7c1-41da-9159-f4ca0032db33" InformativeScreenshot="a1df252f358232206ea542458e844f97.png" Reference="0OjwGQNFZEimLaR_hhDcng/KGAhv80G-EiXIPlehle6fw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done(1)'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="d701f512-4e34-43a3-8845-8c08b38cb6fb" ContentHash="xoz1hIziBkKmXYG9lCWBHQ" DesignTimeRectangle="1224, 627, 51, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' /&gt;" FuzzySelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' type='button' class='navigationButton' check:text='Done' /&gt;" Guid="e0345f00-5bce-473e-bb9f-334a5ec00921" InformativeScreenshot="a1df252f358232206ea542458e844f97.png" Reference="0OjwGQNFZEimLaR_hhDcng/DaJ-KuYnPkqqdRpTWlWiQg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <Throw DisplayName="Throw- Insurance tab not found" Exception="[new BusinessRuleException(&quot;Insurance Tab not found&quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable CVScreenId="7b35caaf-a7a4-4db9-ba4c-719e516fdddb" ContentHash="zt5-HdLs0UStFykspXvQzQ" DesignTimeRectangle="236, 310, 835, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Insurance*' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Charge Line Information (Box 24)' tag='DIV' type='' class='gwt-Label' check:text='Charge Line Information (Box 24)' /&gt;" Guid="7fce4019-e5ee-4eb3-a7f7-0084c36e18e3" InformativeScreenshot="495dd5017b563598012e3283639726e4.png" Reference="0OjwGQNFZEimLaR_hhDcng/BOkOmybHw06-LgCv_pBn2w" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                </uix:NCheckState.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NCheckState>
+                              <uix:NGetText DisplayName="Get Text- NPI Number" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_NPI]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable CVScreenId="90635451-2a3c-4424-9e35-b1f5914dfdd8" ContentHash="6RudmiXsY0u4-6CFSOE8Tw" DesignTimeRectangle="930, 322, 129, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tableCol='2' tag='DIV' parentclass='Claim-GridTRB' rowName='56 NPI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' parentclass='Claim-GridTRB' rowName='56 NPI' class='gwt-Label Claim-Text' /&gt;" Guid="5393de2e-c2e0-4526-9f98-7a2db25b0d85" ImageBase64="" InformativeScreenshot="1b8052693b372f6e445f1e323362f29c.png" Reference="0OjwGQNFZEimLaR_hhDcng/7oql0ddpskqQpNMIUxo3wQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text- Member Id" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_MemberId]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable CVScreenId="d8b846dc-932d-46ba-b9bf-6047cc07ad40" ContentHash="9u80fFWEnk-VdRuKHd5_Jg" DesignTimeRectangle="496, 454, 234, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='60 INSURED&amp;apos;S UNIQUE ID' rowName='60 INSURED&amp;apos;S UNIQUE ID' /&gt;&lt;nav up='6' /&gt;&lt;webctrl tag='DIV' parentclass='Claim-GridR' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Label Claim-Text' tag='DIV' /&gt;" Guid="cf8fe6f0-6517-4399-ab7f-804cc1e8c907" ImageBase64="" InformativeScreenshot="bd9d2087ce097bfa3731928eba81ab6a.png" Reference="0OjwGQNFZEimLaR_hhDcng/v1QyfPcoqUutlJmeZUxIsQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else- 837p" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState DisplayName="Check App State 'Patient and Insured Inf…'" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Timeout="10" Version="V4">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears- Patient Nad Insured Information" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Patient and Insured Information" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="b14b5cc9-ebe2-4f5d-8f1a-7d49ddced642" ContentHash="NT6R_Iq56UGY0dCESFc8Jw" DesignTimeRectangle="215, 247, 17, 18" DesignTimeScaleFactor="1" ElementType="Cell" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Patient and Insured Information*' colName='Patient and Insured Information*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='' /&gt;" Guid="eeb2dbbf-cc8f-4dee-bae2-445b83081cbe" InformativeScreenshot="2d0d595a0deb90f5a5a6a5505f9fcc5d.png" Reference="0OjwGQNFZEimLaR_hhDcng/g0YaewD4nUegdSlAmGWCQQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear- Patient And Insured Information" sap:VirtualizedContainerService.HintSize="450,850" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="0dca6be2-13d9-472c-95fe-2b384e976785" ContentHash="9xdDCNt2NE2ZePmZG53WcA" DesignTimeRectangle="1226, 627, 49, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' type='button' class='navigationButton' check:text='Back' /&gt;" Guid="932cb1c4-a956-4aaf-a867-a1f96fbced60" InformativeScreenshot="c3f44fbfd54bdfcdb9925eb77f044696.png" Reference="0OjwGQNFZEimLaR_hhDcng/VTkDvf2VxEC6DBwz6EBQvA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="5339514d-beba-4e1e-b449-e079f780e713" ContentHash="eJ4O7vt0AEuV0ZPEnfpJGQ" DesignTimeRectangle="1224, 627, 51, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' /&gt;" FuzzySelectorArgument="&lt;webctrl id='doneButtonType2' type='button' class='navigationButton' tag='BUTTON' aaname='Done' check:text='Done' /&gt;" Guid="a21e939f-d7c1-41da-9159-f4ca0032db33" InformativeScreenshot="a1df252f358232206ea542458e844f97.png" Reference="0OjwGQNFZEimLaR_hhDcng/KGAhv80G-EiXIPlehle6fw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done(1)'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="d701f512-4e34-43a3-8845-8c08b38cb6fb" ContentHash="xoz1hIziBkKmXYG9lCWBHQ" DesignTimeRectangle="1224, 627, 51, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' /&gt;" FuzzySelectorArgument="&lt;webctrl id='doneButtonType2' tag='BUTTON' aaname='Done' type='button' class='navigationButton' check:text='Done' /&gt;" Guid="e0345f00-5bce-473e-bb9f-334a5ec00921" InformativeScreenshot="a1df252f358232206ea542458e844f97.png" Reference="0OjwGQNFZEimLaR_hhDcng/DaJ-KuYnPkqqdRpTWlWiQg" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <Throw DisplayName="Throw- Insurance tab not found" Exception="[new BusinessRuleException(&quot;Insurance Tab not found&quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_5" />
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable CVScreenId="8ef76b2a-7d03-4584-a601-c164e58872ce" ContentHash="0HL-Jra5D0WGVPe82h4cNg" DesignTimeRectangle="217, 250, 12, 12" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Patient and Insured Information*' colName='Patient and Insured Information*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="78c3a8d6-2c9a-4d28-b46f-9f91a19d4dfd" InformativeScreenshot="334af2a12bafda760f709394000c5ba8.png" Reference="0OjwGQNFZEimLaR_hhDcng/5GOTrzfu3EC7R72UgmDvwA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="8ef76b2a-7d03-4584-a601-c164e58872ce" CvTextArea="235, 248, 242, 14" CvTextArgument="Patient and Insured Information (Box 01 - 13)" CvType="Text" DesignTimeRectangle="236, 249, 835, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' class='gwt-Label' aaname='Patient and Insured Information (Box 01 - 13)' tag='DIV' check:text='Patient and Insured Information (Box 01 - 13)' /&gt;" Guid="e8cf061c-bbf8-4f3e-9d8a-2f59a1571bc7" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                        <uix:NGetText DisplayName="Get Text Member Id" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_MemberId]" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable CVScreenId="ae31d1ab-f417-4cac-8c9d-842baeb4a55f" ContentHash="PhHeET0XLEePMOTDG-aOHw" DesignTimeRectangle="861, 293, 197, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='1a. INSURED*I.D. NUMBER*' colName='1a. INSURED*I.D. NUMBER*' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tableRow='4' tag='TD' class='cs-SuperTable-lower-cell' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='MM DD YY MM DD YY' tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-lower-cell' tag='TD' /&gt;" Guid="218e454e-69d0-4bb0-bb1d-a27528c241af" ImageBase64="" InformativeScreenshot="040027ec96050d4febf09a2bdc86549e.png" Reference="0OjwGQNFZEimLaR_hhDcng/SqRlsHJNMECQaGm5G2kciA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="861, 266, 197, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='MM DD YY MM DD YY' tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-upper-cell' tag='TD' aaname='1a. INSURED&amp;apos;S I.D. NUMBER (For Program In Item 1)' check:text='1a. INSURED&amp;apos;S I.D. NUMBER (For Program In Item 1)' /&gt;" Guid="9aeb0c34-394d-4322-af7b-0ade0fb44a61" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Minimize Patient and Insured Information" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable CVScreenId="007ea69e-fe95-480c-ab1b-913ffb8a7328" ContentHash="nUhbH9Ow30aJZYubn2e9PQ" DesignTimeRectangle="217, 255, 12, 12" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Patient and Insured Information (Box 01 - 13)' colName='Patient and Insured Information (Box 01 - 13)' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="a4a320cb-0aca-4c6d-a70f-8800ccbc90e7" InformativeScreenshot="371d53f18319f493c2da86e9bbb21b8f.png" Reference="0OjwGQNFZEimLaR_hhDcng/yz14ItzlvU-BJWIUAyuH3Q" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="007ea69e-fe95-480c-ab1b-913ffb8a7328" CvTextArea="235, 253, 241, 14" CvTextArgument="Patient and Insured Information (Box 01 - 13)" CvType="Text" DesignTimeRectangle="236, 254, 818, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' class='gwt-Label' aaname='Patient and Insured Information (Box 01 - 13)' tag='DIV' check:text='Patient and Insured Information (Box 01 - 13)' /&gt;" Guid="36c8067a-f760-4163-80b0-82cf79956114" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click- Expand Supplier Information tab" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable CVScreenId="fae8547c-e8cd-4510-8fdb-ab1459c48d83" ContentHash="WPHCFez2YkCLrvNt9bWlgw" DesignTimeRectangle="216, 322, 15, 17" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Supplier Information*' colName='Supplier Information*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="7191382a-8b15-42de-bc02-379c1e08fb81" InformativeScreenshot="18d7c279b67f16720a5bc985261ded72.png" Reference="0OjwGQNFZEimLaR_hhDcng/zNiFti1ZvkiJC2b8CGzUcA" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="fae8547c-e8cd-4510-8fdb-ab1459c48d83" CvTextArea="235, 322, 182, 14" CvTextArgument="Supplier Information (Box 25 - 33)" CvType="Text" DesignTimeRectangle="235, 322, 182, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' class='gwt-Label' aaname='Supplier Information (Box 25 - 33)' tag='DIV' check:text='Supplier Information (Box 25 - 33)' /&gt;" Guid="4328a00d-205f-45ac-ab67-08123edab52f" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text: NPI Number" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" TextString="[out_NPI]" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable CVScreenId="52483e1e-e1f6-4a60-8cee-d0c8cc69ff89" ContentHash="ZmIFawpsW0GZtgrbBMHCzQ" DesignTimeRectangle="747, 467, 98, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='33. BILLING PROVIDER INFO*PH #' class='cs-SuperTable-cell' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tableCol='8' tag='TD' class='cs-SuperTable-cell h-npi-provider-id' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-cell h-npi-provider-id' tag='TD' /&gt;" Guid="29ebdeb4-d937-4284-aee5-ae634bb30132" ImageBase64="" InformativeScreenshot="13bbfc93fffa5c04994b06070884f48a.png" Reference="0OjwGQNFZEimLaR_hhDcng/uNl0TxmYQUuKAhFT42A2ZQ" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="52483e1e-e1f6-4a60-8cee-d0c8cc69ff89" CvTextArea="213, 468, 37, 11" CvTextArgument="SIGNED" CvType="Text" DesignTimeRectangle="214, 467, 162, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-cell' tag='TD' aaname='SIGNED' check:text='SIGNED' /&gt;" Guid="ce01944a-2e68-4e30-9a84-ee17e5ce5a8c" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else- Unexpected claim format number" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw- Unexpected Claim format number" Exception="[new BusinessRuleException(&quot;Unexpected Claim Format number&quot;)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" sap:VirtualizedContainerService.HintSize="616,57" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="0dca6be2-13d9-472c-95fe-2b384e976785" DesignTimeRectangle="1226, 627, 49, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' type='button' class='navigationButton' check:text='Back' /&gt;" Guid="932cb1c4-a956-4aaf-a867-a1f96fbced60" InformativeScreenshot="c3f44fbfd54bdfcdb9925eb77f044696.png" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" sap:VirtualizedContainerService.HintSize="616,57" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="0dca6be2-13d9-472c-95fe-2b384e976785" DesignTimeRectangle="1226, 627, 49, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' type='button' class='navigationButton' check:text='Back' /&gt;" Guid="932cb1c4-a956-4aaf-a867-a1f96fbced60" InformativeScreenshot="c3f44fbfd54bdfcdb9925eb77f044696.png" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Actions'" sap:VirtualizedContainerService.HintSize="616,50" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="7c2f8c38-b97a-4f43-b33a-d4b9c50cd26a" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable CVScreenId="c56f355d-c255-4534-be17-fc1d10e9a37f" ContentHash="MuPZoPC-4kye-exT5LcFYw" DesignTimeRectangle="1103, 382, 98, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlRPBPActionsInsBtn' tag='BUTTON' type='BUTTON' aaname='Actions' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlRPBPActionsInsBtn' tag='BUTTON' type='BUTTON' aaname='Actions' class='IccButtonGradient' check:text='Actions' /&gt;" Guid="1fadd1f5-a926-40e3-9e35-38a91224152f" InformativeScreenshot="327817be92a321740cd3bde3632cf118.png" Reference="0OjwGQNFZEimLaR_hhDcng/Dwz285YDTkmo0YPYjyWLQw" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1280, 680" BrowserType="IE" ContentHash="uPjtmkkbwECJMO_pwx94Pw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAdZSURBVFhHnZaJU9TlH8e5MjrmN79mmqaZykx+hlJhK3IsLtfiguSGI4LE6Sqoy7FchgeKeCCXQICokKKwSIWhKSCQWOaBRxGXICAgimkooml/wPv3fJ7dBaTvrtgz8xmY3e9336/n/TmexygoQYTMUgWy1eHILV+DvIoIFHyrwt7KOOz/fh2Kq9bj4IkklNYkQ12XgiMNO1DB4kj9dmSVhyJTHYLMshCkHw5BWkmwwQiMnwujySv9UAiiM8SI3e2EhBw3JObJsLHAC0mFcqQULUVqiR8y1IHIqViBvMpwFFYpUXhMiXV7HLCuwAEJ+Q6Iy7NHbI4donfbIjJjPpS7bASDILSy40sIYEP+IiTv98aOEh8m7o/sb4KRf3QlEw7HvhNKFJ2MwMbiBdhQ5Ij1+x2RuE/MgMSIz9eCZNlOHSCthAAcEJslQXyOK1ZtkkDqYwfZMjE++8IFS8Pd4af0QGCMHEGR3lDE+WCbWooth52w5ZATNpdIkHRAwoHW73PkzsR9ZQ8VcyMibYoAUen2iMlaAKeg2XBfaY1Fa+fBW+WAZQkS+G90Q3CyBxTbvRC+S461mUuwMHYWZAkfwjPREilqZ2wtdeYwBEKufFko5mmZDKEHIBiR6XZQZTpCEmgJN8XH8Fj9KeRRdlga7wi/9S4ISJIiNMUDK3d6ISxt8TMAXhtnQxY2B9vKXZBcqnFkA3ODQzAnJqbjQstxYYCINFuoshzhGDALriusIAufi88ibbAklrnwJbnggsAtUoRsk0Ea/b9/ACzePAc7v3XF9iMu2FrmrIFgTvBCzZPg1MWvUXu+WD8A0cVmi+HgbwGnkNmQrvoYnkoR5CpbXOk9ir2nArC/IQi/9x/XC/D5ViukfqeBICcO1KrQ+FsJGq4cRF3T14ZTEJE+H7G5DrDzm4EFQcwFxRzI1ljDK1KE/BpfFNYtR9HpAGTXyJBTK4P7CktBgLTvpTh3rRS/tB/Gz62HcKa5hKciNteOpXm+foAo1ruUL5tl0yEOmAnnUEtIw6zgobRmAD7Y2+CLokZ/5NZ5IK+eRYOnIMDF7jKc7yrFuY5SngoqykTWGfGsIKMzbfWngAqFeli09B3Y+TMXgi3gorCE+2or5NV6o7DBB1/Ve3LhgtMsGhcJAjT1lCG9SsrrgbqDaqG4Ogo/XtWkQa8D1C4JbKoRgI3vu7APmAFJqAVcwywZgBx7Grz5zkl8DxMvPCMMsPvkQmQcc0dqpRvOtBbzNFRfyufFGJNtp98BFfuSxqoOwNb/PYiDGITCArk1Xiiol2t2rxW38ZwpDFC9UJOGzlIUnQpDMhtW+VUK7kD9pQO40PoCAPaBrB5C3kd2tQy5pzR5l6/9SG8XXL5RjqZeNTKOu2MXc6Chec9YIT4fYFIKJgI4KpgTYR/Aec1MuEZYCAKMPB1gAGqegovXNQ780qHphMaJAFMpwhcBGH36J3fmcl85LrHdUxFeYADUimdZK/7UMg5ARagXQNeG/8aBdFZ0NBuaetQ8/7uOumFHhSvOtjGA3w/hNB9GB3gbkpZWdnzRhzSIYtgxKgSgW8s3OetNAbeeiV/oKuMtWFQbxu2vYR0wpUFEY5LSIASwk41XmnDUXlk/uOstQnpGl/ucKj8+hOh4jmcXFqoxg6OYviQXhAC2sdlOu6LKJpH0Y1JBAH2HEV1QdLckgwAUQgB0sKSUO2N7hQYk9Ts3QYBbw23PPY6TC/zHAM5ebUFr9w0YJWb4GATYxKykywYHYeOVzn0hABpEQheSVZtF8FdZw1f5CUh0YoyRGAKgw4SuWwRCuyMYz1XstBQA0F3JlKnzEZzwKXzXfoKDlUU491vbP8QpxgBONv6INTvmCQLQSUY/mrhXzC+gtEMCegYgaQ484mYjNFGEL1RzUXeuEb923sCVjh6cb24XFL/ePzgOQA939A3CSvIuREueBaAcUotSPqmiaWJGZdjCJWwWnFeyWPEhFinn8fdbewbQ3NU3Jq5v5xSrI6OzOUDv4JAW4Bb6hu7i9p8PcPfBKESLp8NG/j7PnV+ENZZHWrNczkXJ0RwM3h1G/9A99N76A9cHhvi7E8Uvt3cLik4MLq5b9EFbz00GcA9/3B/B8OhjPHj0F0ZY3H/0GMMPHzGohxgafqARv6MR7yLxG4No6R7gwhRNrZ2CgpNDK61Z9MHVa73oHrzDAB5i5PETjP71hP+9z2DujYzizvAIFyfIHvZcZ/9ttPXeRPP1qe+6ubMH5HhH78CzAFQQ9AD9CO1s9MlTPGQAtHMCunXvPt91D/tuXLjfoPCl1mtcjP7XyhhenX03x14mN9qZtWRx18BtbY7Hd0sFpntWFy1dvVyw9ufzf2t/8sWXjvh5odsdibpKF8aYmpq+PSneMjUxfdPE2OR1E2Pj14yNjV9l8RKTMNEoCSz2gPlLZmYW5i+bO1VW141SvihXV9u7uChrmxOvmJtLp02bJjIzM5thIKabmZq+wwFMTN5g8V8W/9GCvMKkCMKYixoZGf0fP+F1WVjwzyMAAAAASUVORK5CYII=" InformativeScreenshot="5abeb6b389ce9980d22e9d4aac320727.png" Reference="0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg" Selector="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" Title="Cerner Soarian [TRAIN 2025.01]" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

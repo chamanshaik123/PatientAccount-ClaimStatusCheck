@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PFXijsrGkkeYbXgZHylDXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e547b56f-de7e-43e7-98f7-5a23dc1a5bc1" DesignTimeRectangle="13, 152, 167, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='CLSTDENIAL' class='IccComboBoxPopupTableCell' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='CLSTDENIAL' class='IccComboBoxPopupTableCell' type='' check:text='CLSTDENIAL' /&gt;" Guid="59ef200d-4b4f-4ffe-8bdf-7b454f0dc927" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0dd9ebe7e65b9823a0c90e419b510a2e.png" xmlns="">0UfEwpnvZ6U6QAWqGY8zBrg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

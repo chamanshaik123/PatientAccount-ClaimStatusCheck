@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zt5-HdLs0UStFykspXvQzQ" Reference="0OjwGQNFZEimLaR_hhDcng/BOkOmybHw06-LgCv_pBn2w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7b35caaf-a7a4-4db9-ba4c-719e516fdddb" DesignTimeRectangle="236, 310, 835, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Insurance*' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Charge Line Information (Box 24)' tag='DIV' type='' class='gwt-Label' check:text='Charge Line Information (Box 24)' /&gt;" Guid="7fce4019-e5ee-4eb3-a7f7-0084c36e18e3" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="495dd5017b563598012e3283639726e4.png" xmlns="">0HixbX4oZjE2ai6WQbcghrA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

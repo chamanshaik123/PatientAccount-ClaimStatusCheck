@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CS Claim Status",
+  "Type": "Element",
+  "Id": "kUE-GqXHq0myAfyuwJ2emA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/kUE-GqXHq0myAfyuwJ2emA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/4aX4tmujpEquubNGkBG8Aw",
+  "Created": "2025-05-13T15:05:15.0918716Z",
+  "Updated": "2025-05-13T15:05:15.0918716Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

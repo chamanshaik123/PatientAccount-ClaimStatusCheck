@@ -1,0 +1,14 @@
+﻿{
+  "Name": "SFUPGRADETHREE, SCRIPTF…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "nInsJ-edvkGvDW9Ck0X-5w",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/nInsJ-edvkGvDW9Ck0X-5w",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/bLwOHrrbTkirs1CEPriNDQ",
+  "Created": "2025-04-23T07:10:15.3671412Z",
+  "Updated": "2025-04-23T07:10:15.3671412Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

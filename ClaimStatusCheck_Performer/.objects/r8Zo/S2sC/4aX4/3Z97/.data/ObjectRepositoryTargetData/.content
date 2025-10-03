@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gfeXLi4Wi0KNXp8s-1q9og" Reference="0OjwGQNFZEimLaR_hhDcng/3Z97YOZ78k-qED8t0MEy3Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/spc/errors" DesignTimeRectangle="204, 471, 888, 48" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='We&amp;apos;re going to fix it up and have it working as soon as possible. In the meantime, here are a couple of things you can do to help resolve the issue:' check:innerText='We&amp;apos;re going to fix it up and have it working as soon as possible. In the meantime, here are a' /&gt;" Guid="bcc0e716-b63f-47f5-b946-46741c5e754a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Error' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f16081b6b6ee6b5a91cd62d9f2402a80.png" xmlns="">0h_7ldAWBIUOldUqq9uW2QQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

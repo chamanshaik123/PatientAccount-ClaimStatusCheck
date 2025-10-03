@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_cZUirwvV0ePBaiuioB7Zw" Reference="0OjwGQNFZEimLaR_hhDcng/nInsJ-edvkGvDW9Ck0X-5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="244, 568, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TR' aaname='*{0}*' /&gt;&lt;webctrl tableCol='2' tag='TD' parentclass='*CUI-Grid*Row' /&gt;&quot;, SelectorReference)]" FuzzySelectorArgument="&lt;webctrl tag='TR' aaname='  SFUPGRADETHREE, SCRIPTFIVE       UMR Wausau    UMR PEIA  1  12/09/2024  12/10/202412/12/20241321,682.00&amp;#x9;04/16/2025  Aging Ins' /&gt;&lt;webctrl type='' class='' tag='IMG' aaname='' /&gt;" Guid="3888f630-3e33-48c7-88c7-79d25d85b6d0" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="28ef980f-e88f-48fa-94df-5d135ade828d" CvTextArea="300, 570, 126, 13" CvTextArgument="SFUPGRADETHREE,.." CvType="Text" DesignTimeRectangle="301, 570, 132, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='EllipsisHtml5' tag='A' aaname='SFUPGRADETHREE, SCRIPTFIVE' check:text='SFUPGRADETHREE, SCRIPTFIVE' /&gt;" Guid="01d94926-3b1f-4829-aa8c-8b3ed31ebd26" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="04a21aa1f4d1b8dd264529eb9b026536.png" xmlns="">0kaXQuqJ16kezMgZYEPqjBQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*WEBER, DANIEL*Hghmrk Bl Crss Bl Sh*06/26/2025*43.08*" Name="SelectorReference" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

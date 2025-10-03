@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Free-form Comment",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Dxm6SwXdrkOKHgGHtwXHNw",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/Dxm6SwXdrkOKHgGHtwXHNw",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/sIbHAi1fWU6P_l6ZZ-EhUg",
+  "Created": "2025-05-20T09:42:59.002544Z",
+  "Updated": "2025-05-20T09:42:59.002544Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

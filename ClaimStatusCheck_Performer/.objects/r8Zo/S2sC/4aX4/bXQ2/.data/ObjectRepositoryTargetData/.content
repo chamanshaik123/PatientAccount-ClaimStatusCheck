@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-as6yqP_nEyoukUsLceW8Q" Reference="0OjwGQNFZEimLaR_hhDcng/bXQ2E7FW1USVHL7H9n-sLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="4b116c78-3723-495e-9467-44a032470fa7" DesignTimeRectangle="370, 135, 101, 37" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' aaname='Accept All Cookies' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='' aaname='Accept All Cookies' check:innerText='Accept All Cookies' /&gt;" Guid="0dc87e1e-5197-4a83-b31e-995155736fce" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="44299c8ebbed4dfaf13acc314d7c2bc5.png" xmlns="">0bHfe0PudrU-6DPgdrNY3Yw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

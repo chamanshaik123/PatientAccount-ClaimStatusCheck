@@ -1,0 +1,14 @@
+﻿{
+  "Name": "837I",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "fiWylvn550W_WoWcAmXVcQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/fiWylvn550W_WoWcAmXVcQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg",
+  "Created": "2025-04-28T13:06:41.9782Z",
+  "Updated": "2025-04-28T13:06:41.9782Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

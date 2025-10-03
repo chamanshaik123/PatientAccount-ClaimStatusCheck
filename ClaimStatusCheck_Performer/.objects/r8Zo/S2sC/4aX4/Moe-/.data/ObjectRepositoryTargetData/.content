@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wLh9dswV-UGgqCLDwb9hug" Reference="0OjwGQNFZEimLaR_hhDcng/Moe-8pafVU2TqE77vgxrJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="3fe12719-3980-457e-8f45-bccc364b23b4" DesignTimeRectangle="821, 140, 15, 26" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FullSelectorArgument="&lt;webctrl id='pendo-close-guide*' tag='BUTTON' aaname='×' aria-label='Close' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pendo-close-guide*' tag='BUTTON' aaname='×' aria-label='Close' type='' class='_pendo-close-guide' check:text='×' /&gt;" Guid="b1e4d24f-d7bb-4fa2-87fd-acf9cfe187a5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="dce88fef1c70cd4597f1e44fc32a680e.png" xmlns="">0T6acE6QqZEymEMFr7G0dSA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

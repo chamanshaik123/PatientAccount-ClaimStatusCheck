@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NM7TId0LWUWEG7YxeivCRg" Reference="0OjwGQNFZEimLaR_hhDcng/wvhxoJuKjU2cdOITx3mvuw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="244, 163, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='1279078-1-Z_2' tableCol='2' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='1279078-1-Z_2' type='' class='' tag='IMG' aaname='' /&gt;" Guid="28b104b1-16c7-47ba-85d1-9d3261e109fd" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [TRAIN 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="91344e56-caff-48f6-86b1-0296fbe902dc" CvTextArea="301, 165, 112, 13" CvTextArgument="SFUPGRADESSI,RE" CvType="Text" DesignTimeRectangle="301, 165, 132, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='EllipsisHtml5' tag='A' aaname='SFUPGRADESSI, RENDERING' check:text='SFUPGRADESSI, RENDERING' /&gt;" Guid="1457f11f-efcf-4ba2-a63b-6b4406bc22be" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d959fc5acc3896153a0aadcd1613b772.png" xmlns="">09h55BO4cG0e2j5YON8-Nyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

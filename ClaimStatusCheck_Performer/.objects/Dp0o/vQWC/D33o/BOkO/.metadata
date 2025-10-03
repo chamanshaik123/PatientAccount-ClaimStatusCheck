@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Charge Line Information…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "BOkOmybHw06-LgCv_pBn2w",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/BOkOmybHw06-LgCv_pBn2w",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg",
+  "Created": "2025-05-08T08:09:48.74525Z",
+  "Updated": "2025-05-08T08:09:48.74525Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kQ7WiHvheUSuOW_p5rJOnw" Reference="0OjwGQNFZEimLaR_hhDcng/JNyxqXKhHEe5fTdcQiAKxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="11080129-8b10-44cf-b029-a8de0c178491" DesignTimeRectangle="1159, 307, 85, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='clearForm' tag='BUTTON' aaname='Clear Form' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='clearForm' tag='BUTTON' aaname='Clear Form' type='button' class='btn btn-light btn btn-secondary' check:text='Clear Form' /&gt;" Guid="f9e29515-f91a-4e03-9125-840290957d07" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="38c2f3a3cf6f402aa6d67db70122179e.png" xmlns="">0JJ1mEBLlX0CsdeVOHDeYSg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

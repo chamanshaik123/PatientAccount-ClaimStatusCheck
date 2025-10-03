@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nGaAiOtAXkGlURKzs4O6Gg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="4717e4cd-1051-4fbe-a037-6905ab8d9f72" DesignTimeRectangle="46, 472, 343, 23" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='providerSelect' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl type='' class='provider-select__input-container css-vcw2c9' parentid='providerSelect' tag='DIV' aaname='' /&gt;" Guid="130a581c-cf48-46fa-b267-a536ec623cdc" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials - Less than 29 minutes left until session expiration.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="37, 448, 108, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerExpressEntry-label' tag='LABEL' type='' class='' aaname=' Select a Provider' check:innerText='* Select a Provider' /&gt;" Guid="69fedc87-ae22-4b83-b818-a706fb7b9148" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f114d22c49a75a212fcf292662192646.png" xmlns="">0_AO9nAWD2Eebv-PBBYhWtw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

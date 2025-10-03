@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="K5fqOV5TqUKb80JCuYg26g" Reference="0OjwGQNFZEimLaR_hhDcng/LxOPuGDyGUSEaMaxx7fqjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="0771657f-94d2-40b7-8ea0-fadc1ba4748a" DesignTimeRectangle="217, 300, 12, 12" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Insurance*' colName='Insurance*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="2eb4ab41-1d1d-46f7-83c4-40704c719cdb" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="0771657f-94d2-40b7-8ea0-fadc1ba4748a" CvTextArea="235, 299, 114, 14" CvTextArgument="Insurance (FL 50-65)" CvType="Text" DesignTimeRectangle="236, 299, 835, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Insurance (FL 50-65)' type='' class='gwt-Label' tag='DIV' check:text='Insurance (FL 50-65)' /&gt;" Guid="0570cb8c-6ce7-4848-820a-5372b16fd85e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="44ba3d3b18d6e623c75e01e8ee02b631.png" xmlns="">0rgvM5ljU_k2YUGj0ytlcHw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

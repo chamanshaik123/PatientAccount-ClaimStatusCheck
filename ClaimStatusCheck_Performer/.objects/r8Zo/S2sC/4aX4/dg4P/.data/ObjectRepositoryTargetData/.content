@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bSQYALMc_UuYRLQvAparow" Reference="0OjwGQNFZEimLaR_hhDcng/dg4PkxMYjkuF8cv50v1eNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="8e469ace-a50e-4fd0-b66f-10fe047e1065" DesignTimeRectangle="212, 108, 30, 12" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Home' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' tag='SPAN' type='' class='av-nav-lg-inline' check:text='Home' /&gt;" Guid="d9d83498-c40f-4445-a48a-d2e03e687fe8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="84bb557f81255dfaab590ab2f9682e58.png" xmlns="">0GOWm4imh6k61q9R8gcNZug</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

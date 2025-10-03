@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FOukt6hC80ilH_dmGhHPRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="588ae68b-27bc-4889-87e9-ed1994e46d00" DesignTimeRectangle="37, 452, 386, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='providerTaxId-field' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='providerTaxId-field' tag='DIV' type='' class='av__control css-1vczugn-control' aaname='' /&gt;" Guid="28a8919a-9b3f-4657-8490-0a19b7b8f0a2" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="588ae68b-27bc-4889-87e9-ed1994e46d00" CvTextArea="35, 433, 100, 14" CvTextArgument="* Provider Tax ID" CvType="Text" DesignTimeRectangle="37, 432, 97, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerTaxId-label' tag='LABEL' type='' class='' aaname=' Provider Tax ID' check:innerText='* Provider Tax ID' /&gt;" Guid="2e643a69-3fe5-45cd-ab7f-8cdba8bb16c7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0e2ca7f355f20e8473a29346e5e1c5f2.png" xmlns="">0WQYHa6Ugm0OHg0r1-Lg6yg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

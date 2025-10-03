@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b67xf_-Bekibut7zjbYo3g" Reference="0OjwGQNFZEimLaR_hhDcng/9_B36QQ2g0SwPg-15cjCJg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="e657a81b-f58c-40b0-b8ed-8518c635c166" DesignTimeRectangle="703, 96, 137, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' class='NavDropdown__trigger' parentclass='NavDropdown' parentid='region-select' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' class='NavDropdown__trigger' parentclass='NavDropdown' parentid='region-select' type='button' aaname='West Virginia' check:text='West Virginia' /&gt;" Guid="1cf19046-3c1e-4900-aab9-15dea1d4e05a" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="413cf370780e0b7ed1a39f5ca3f3288a.png" xmlns="">0sxUbVWknb0OX-My_U9CJ2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

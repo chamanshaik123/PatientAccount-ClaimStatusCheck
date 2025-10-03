@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Extract Table Data",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "5X95qbeTMEWm-5ClHTHp5g",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/5X95qbeTMEWm-5ClHTHp5g",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/hwrVe3keg0C8n1VcZ4TZiA",
+  "Created": "2025-05-15T08:40:45.3246607Z",
+  "Updated": "2025-05-15T08:40:45.3246607Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

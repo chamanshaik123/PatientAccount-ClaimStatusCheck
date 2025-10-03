@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uQNG7jDeskCljbRaLpBILA" Reference="0OjwGQNFZEimLaR_hhDcng/topORH_Tbkaa2YmNzmu3NQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="c31ff863-cbfd-412d-a11c-726ba8ef76ae" DesignTimeRectangle="345, 535, 291, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='toDate' tag='INPUT' aaname='* Service To Date' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='serviceDates-end' tag='INPUT' aria-label='To Date' type='text' class='DateInput_input DateInput_input_1' placeholder='To Date' aaname='' /&gt;" Guid="f2a16a6e-6484-4f64-a05b-e74736c13468" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="c31ff863-cbfd-412d-a11c-726ba8ef76ae" CvElementArea="326, 537, 20, 31" CvType="ArrowButton" DesignTimeRectangle="328, 535, 17, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl aria-role='presentation' tag='DIV' type='' class='DateRangePickerInput_arrow DateRangePickerInput_arrow_1' aaname='-' check:innerText='-' /&gt;" Guid="6bf0408d-ac74-4c52-80f8-6d41e6d9fc88" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0869ed32bdd0816dcbafa81c606a23d8.png" xmlns="">08BYfwmOukECItc3ZN_i3Nw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
