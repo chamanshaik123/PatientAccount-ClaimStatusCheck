@@ -1,0 +1,14 @@
+﻿{
+  "Name": "My Providers",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bXQ2E7FW1USVHL7H9n-sLg",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/bXQ2E7FW1USVHL7H9n-sLg",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/4aX4tmujpEquubNGkBG8Aw",
+  "Created": "2025-06-13T10:09:19.5046075Z",
+  "Updated": "2025-06-13T10:09:19.5046075Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xTkOBtGZ8k-LePEuI7qalg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="6fed5f4e-809e-4f56-a931-2987415d24a2" DesignTimeRectangle="37, 216, 10, 10" DesignTimeScaleFactor="0.800000011920929" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname='Subscriber is the same as the Patient.' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname='Subscriber is the same as the Patient.' type='checkbox' class='is-untouched form-check-input' /&gt;" Guid="acedc98b-7bb4-4816-8611-f1bb0a49e6ac" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6fed5f4e-809e-4f56-a931-2987415d24a2" CvTextArea="50, 214, 216, 13" CvTextArgument="Subscriber is the same as the Patient." CvType="Text" DesignTimeRectangle="51, 211, 216, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='patientIsSubscriber' tag='LABEL' type='' class='form-check-label' aaname='Subscriber is the same as the Patient.' check:innerText='Subscriber is the same as the Patient.' /&gt;" Guid="9466a32b-9946-4eef-a3ce-ffaaf0bb9c1d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="29c92f28cbb17e2f5875cb9034b9a431.png" xmlns="">0wEi-xuUMkE-mrAC-2iq5yg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

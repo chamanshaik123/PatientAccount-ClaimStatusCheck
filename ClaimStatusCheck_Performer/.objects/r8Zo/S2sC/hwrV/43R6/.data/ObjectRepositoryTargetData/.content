@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8UpLvmf9KkWcX8N8EBwZvg" Reference="0OjwGQNFZEimLaR_hhDcng/43R6KD-el0uFWA5DrVuq9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="b919f045-3031-408a-abcf-80f2dd546a9d" CvElementArea="36, 510, 388, 33" CvType="InputBox" DesignTimeRectangle="37, 511, 386, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='providerSelect' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='providerSelect' tag='DIV' type='' class='provider-select__control css-1vczugn-control' aaname='' /&gt;" Guid="b1234cf4-4443-4e55-8f8e-543ba11d5be8" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="37, 490, 108, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='providerExpressEntry-label' tag='LABEL' type='' class='' aaname=' Select a Provider' check:innerText='* Select a Provider' /&gt;" Guid="ec11ddcd-a12a-4806-8c7d-faa10ae5344f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6ca65bd2abeb15d4f46a79c3ca67f2b2.png" xmlns="">0oDMf1X3x-EKIINhHSoZG-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

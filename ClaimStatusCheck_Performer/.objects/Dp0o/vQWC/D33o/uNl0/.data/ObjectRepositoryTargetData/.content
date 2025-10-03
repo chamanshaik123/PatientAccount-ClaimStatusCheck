@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZmIFawpsW0GZtgrbBMHCzQ" Reference="0OjwGQNFZEimLaR_hhDcng/uNl0TxmYQUuKAhFT42A2ZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="52483e1e-e1f6-4a60-8cee-d0c8cc69ff89" DesignTimeRectangle="747, 467, 98, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='33. BILLING PROVIDER INFO*PH #' class='cs-SuperTable-cell' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tableCol='8' tag='TD' class='cs-SuperTable-cell h-npi-provider-id' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-cell h-npi-provider-id' tag='TD' /&gt;" Guid="29ebdeb4-d937-4284-aee5-ae634bb30132" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="52483e1e-e1f6-4a60-8cee-d0c8cc69ff89" CvTextArea="213, 468, 37, 11" CvTextArgument="SIGNED" CvType="Text" DesignTimeRectangle="214, 467, 162, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-cell' tag='TD' aaname='SIGNED' check:text='SIGNED' /&gt;" Guid="ce01944a-2e68-4e30-9a84-ee17e5ce5a8c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="13bbfc93fffa5c04994b06070884f48a.png" xmlns="">0x0CMsykK_Em3PvP5VXw5dQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

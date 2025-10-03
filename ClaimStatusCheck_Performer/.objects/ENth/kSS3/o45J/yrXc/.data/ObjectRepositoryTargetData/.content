@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x-wMaurCdkeJhQMu8hzjIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="f08d102b-83d8-4c04-a68f-ffa45e99238a" DesignTimeRectangle="177, 507, 954, 16" DesignTimeScaleFactor="0.6666666865348816" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='results' tag='LI' aaname='*The payer could not find any results based on your search. Please refine your search criteria*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='results' tag='LI' aaname='*The payer could not find any results based on your search. Please refine your search criteria*' type='' class='' check:text='The payer could not find any results based on your search. Please refine your search criteria' /&gt;" Guid="f4d9b33f-5be4-4c71-81fc-8b6057df0dfa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="77c1e7565a9540419a469a70f833a3a9.png" xmlns="">0sB2HZhrJzkqhDlDWE_WZFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

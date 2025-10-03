@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8KBqSIdboE-IPGTK_lHkIA" Reference="O7jwmsldt0a3NKdfcatgIg/lLewTD0wWEqln1NpkvzPPQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="06261617-cfee-4f66-9e74-0699babf6e73" DesignTimeRectangle="1063, 320, 224, 54" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='dropdownLogOffBtn' tag='A' aaname='Log off' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dropdownLogOffBtn' tag='A' aaname='Log off' type='' class='theme-highlight-color' check:text='Log off' /&gt;" Guid="e075b6d5-1910-4b49-8839-31f2bd45c3d5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="4694d7a0f531f569d887c99a37c22b4d.png" xmlns="">0tPdRj7k7ik-0SCvPcEeG1A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

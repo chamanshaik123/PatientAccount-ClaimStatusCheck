@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LVzCRobIQEyCvXc9D9CtBg" Reference="0OjwGQNFZEimLaR_hhDcng/fiWylvn550W_WoWcAmXVcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c05ded3c-c463-492c-a6e4-cd6ada2140dd" DesignTimeRectangle="379, 243, 23, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' id='ctlClaimFormat_HyperLink' rowName='Claim format: ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' id='ctlClaimFormat_HyperLink' rowName='Claim format: ' type='' class='truncated-label link' aaname='' check:text='837I' /&gt;" Guid="68ffa8ad-04ad-49c4-a5ef-ff11019e87c3" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c05ded3c-c463-492c-a6e4-cd6ada2140dd" CvTextArea="225, 243, 72, 12" CvTextArgument="Claim format:" CvType="Text" DesignTimeRectangle="226, 244, 149, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='readonly-field-label' tag='LABEL' aaname='' check:text='Claim format:' /&gt;" Guid="b3cd14e0-015f-4f40-8da4-d670e77bec68" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="64fd4ec076fcbd3853627f4b9a3c6582.png" xmlns="">0Ff9l_IibvE2952zWJnwrfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vqE49lsb0kOW35t4vstm-g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="b60024a9-38cd-4685-9326-d246c21b2812" CvTextArea="1239, 108, 37, 13" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1241, 108, 34, 12" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Logout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='SPAN' type='' class='av-nav-lg-inline' check:text='Logout' /&gt;" Guid="b8e79843-e1f4-4eac-b1a1-d77840d9ca3a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="77fcdcf032590129a8ee8c206df3b474.png" xmlns="">0oJEWWMsmB0mQukNYE4nXOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

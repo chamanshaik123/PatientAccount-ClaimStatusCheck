@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eXvzafbSMUG_4OC9I6nxow" Reference="O7jwmsldt0a3NKdfcatgIg/TmwP_PYTA06F4O1KaE_jow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="5dc524d6-0604-401c-83d5-e93c4d90febe" DesignTimeRectangle="959, 150, 54, 13" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' aaname='{0}' id='filterMenuOption' /&gt;&quot;, in_CustomFilterName)]" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='RPA BOT' id='filterMenuOption' type='' class='' check:text='RPA ClaimStatus' /&gt;" Guid="3a12e2af-6368-429c-b1d5-a0ad88e9fd3e" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="d835c6b7d9c9e42fa680d0f1d0c9b8e6.png" xmlns="">06C09NYAvG0ayR3sLwgp5_A</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_CustomFilterName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

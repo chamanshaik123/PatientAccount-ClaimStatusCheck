@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ky9VCVwCqkSwJBrzL54a8w" Reference="0OjwGQNFZEimLaR_hhDcng/zv82Pl60VU6--sDXDHRT9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="1122abc7-6de9-4649-af33-71581ec1e25a" DesignTimeRectangle="12, 108, 169, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Comment Code' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Comment Code' type='text' class='IccComboBoxInput' /&gt;" Guid="a2b6e4f6-8c58-4dc9-803d-b337de31c2cf" IsResponsive="True" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1122abc7-6de9-4649-af33-71581ec1e25a" CvTextArea="12, 92, 91, 12" CvTextArgument="Comment Code" CvType="Text" DesignTimeRectangle="14, 92, 89, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Label_ctlCmntDef_DComboBox' type='' class='field-label' tag='LABEL' aaname='' check:text='Comment Code' /&gt;" Guid="945dc30d-5105-4e93-9451-4ee111b1b1a2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="607d097ee8fc7022f7cac50f0d6e451d.png" xmlns="">0bRC9PI45lkOyyCVpjAyNhA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

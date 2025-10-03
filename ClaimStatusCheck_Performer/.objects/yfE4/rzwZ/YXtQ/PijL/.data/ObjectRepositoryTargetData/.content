@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="i78uktyi7UO7qMcBUbo0sA" Reference="0OjwGQNFZEimLaR_hhDcng/PijL8rPcF0enW4WXKMbw3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="38a3a709-f297-4f3c-9092-ce5218462b44" DesignTimeRectangle="112, 543, 1097, 24" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='results' tag='LI' aaname='Enter a valid Requesting Provider National Provider Identifier (NPI)*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='results' tag='LI' aaname='Enter a valid Requesting Provider National Provider Identifier (NPI) containing 10 numeric digits and beginning with a 1, 2, 3, or 4.' type='' class='' check:text='Enter a valid Requesting Provider National Provider Identifier (NPI) containing 10 numeric digits and beginning with a 1, 2, 3, or 4.' /&gt;" Guid="fd5fcce5-f658-4423-a839-dc439f21defe" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="c2a5a16f97006cf78445d130e8b563ee.png" xmlns="">0sfCey8DLUUOoG7Xngq2DOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Quick Filter RPA BOT Ad…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "1Uvq0DIgVkiF9xyxm4JBvw",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/1Uvq0DIgVkiF9xyxm4JBvw",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/NBwajwRC7UKft5Xr_vTsNg",
+  "Created": "2025-06-26T08:23:42.0645949Z",
+  "Updated": "2025-06-26T08:23:42.0645949Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

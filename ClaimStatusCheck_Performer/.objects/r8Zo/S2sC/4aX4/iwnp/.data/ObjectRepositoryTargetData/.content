@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1AF54KQFLk2UmFDInF5mbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="8d4f80cd-a5c5-430c-92a8-52c5fa7c85be" DesignTimeRectangle="157, 295, 342, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1duwal8' placeholder='Enter your user ID.' /&gt;" Guid="0fe6aee0-9d6e-41b8-b53d-a71657f0c39e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8d4f80cd-a5c5-430c-92a8-52c5fa7c85be" CvTextArea="156, 275, 45, 13" CvTextArgument="User ID" CvType="Text" DesignTimeRectangle="157, 274, 43, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='userId-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='User ID' check:innerText='User ID' /&gt;" Guid="0caba332-f681-48d2-8081-bbea5344e043" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d1e85a9687a934d102b23f24137145f8.png" xmlns="">0Td-CWuQackOSD-kfvLOqQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

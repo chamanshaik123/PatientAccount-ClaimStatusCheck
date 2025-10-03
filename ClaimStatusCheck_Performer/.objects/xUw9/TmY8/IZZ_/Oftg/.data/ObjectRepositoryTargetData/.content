@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="snNEpNe72Umzvvq-ee8_8A" Reference="0OjwGQNFZEimLaR_hhDcng/Oftg82c1Sk2-txBJuzc3eA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="e8430d77-497b-4819-806e-67f61be3c291" DesignTimeRectangle="37, 389, 592, 30" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='patientBirthDate' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='patientBirthDate' tag='INPUT' type='' class='form-control is-untouched av-invalid' placeholder='MM/DD/YYYY' aaname='* Patient Date of Birth' /&gt;" Guid="f491d670-2a37-400c-b145-616da498956f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e8430d77-497b-4819-806e-67f61be3c291" CvTextArea="35, 369, 127, 14" CvTextArgument="* Patient Date of Birth" CvType="Text" DesignTimeRectangle="37, 368, 125, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='patientBirthDate_tooltip' tag='LABEL' type='' class='' aaname=' Patient Date of Birth' check:innerText='* Patient Date of Birth' /&gt;" Guid="44272159-f5a3-45b1-bbb0-ce1f71006c2d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fc72cd23913e5435c6a69ca1ace4edd3.png" xmlns="">0ZXZ2Dz2_RkiuyWhyT159WQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

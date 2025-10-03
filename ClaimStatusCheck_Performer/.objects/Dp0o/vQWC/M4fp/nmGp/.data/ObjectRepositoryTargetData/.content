@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ak8_mNPec0Kh-JJbUHh-3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="425, 316, 480, 175" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' class='IccTextArea' id='ctlIccTextArea10' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' class='IccTextArea' id='ctlIccTextArea10' type='textarea' aaname='' /&gt;" Guid="ae220d5b-a75c-47df-b59b-f85b5a629c21" IsResponsive="True" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3abde648-d610-4352-9571-26d37cacde77" CvTextArea="425, 301, 35, 12" CvTextArgument="Memo" CvType="Text" DesignTimeRectangle="424, 301, 144, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Memo' parentid='worklistingReshowUI' type='' class='CUI-BaseFont' tag='DIV' check:text='Memo' /&gt;" Guid="ffa68247-29a9-4c7a-98cc-9b7b3cc41c19" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ebbd44596cbb410f96d8d5cbc17b6719.png" xmlns="">0UmFQnwRdN023xHzDrG4OLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

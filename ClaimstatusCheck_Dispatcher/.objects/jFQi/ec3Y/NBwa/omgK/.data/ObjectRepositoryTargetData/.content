@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RRB7vGIg0Uq2laM023w2AA" Reference="O7jwmsldt0a3NKdfcatgIg/omgK-erFj0WR9tSHG_vtiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1002, 128, 42, 15" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='pageFilter' tag='SPAN' aaname='*Filter*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pageFilter' tag='SPAN' aaname='*Filter*' type='' class='WKL-gwt_ListBoxToolbar' check:text='Filter    RPA BOT   &amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Manage Filters' /&gt;" Guid="b98857ec-87c5-4826-bc01-aead65c7ab5e" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="dc29c738fe55caad700f9e79384b4d9b.png" xmlns="">0hbOtRNOsKEead2A866eIVA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

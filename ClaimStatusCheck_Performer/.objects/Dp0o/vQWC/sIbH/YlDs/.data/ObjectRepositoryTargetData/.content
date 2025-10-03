@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iHyTyYoQS0KjAG-Uetmoiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ea542b18-6174-4496-bf9e-6dd448b05655" DesignTimeRectangle="494, 449, 39, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='OK' parentid='ctlOK_Button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='OK' parentid='ctlOK_Button' type='button' class='IccButtonGradient' check:text='OK' /&gt;" Guid="9853982f-ea2e-4eb1-9dca-7e701a947275" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' isremoteapp='1' title='RevElate' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="081fa32915077fa24b71d99ec81e2bdf.png" xmlns="">0FIpVNEhhcEe2NJu4-DQ1dA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

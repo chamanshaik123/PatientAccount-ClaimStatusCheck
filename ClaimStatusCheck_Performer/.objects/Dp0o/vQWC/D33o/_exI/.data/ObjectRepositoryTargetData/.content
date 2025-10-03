@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hCN7u2OYcketGpDRfqjCLA" Reference="0OjwGQNFZEimLaR_hhDcng/_exIqAUGwU6oGus6xj5Rhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3a27801f-52da-4bc2-97f7-5962b7f3c821" DesignTimeRectangle="933, 260, 47, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='blind' tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='blind' tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' type='' class='' /&gt;" Guid="f8713b7c-733b-40b9-8cb9-fc21330c795f" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3a27801f-52da-4bc2-97f7-5962b7f3c821" CvTextArea="808, 259, 110, 13" CvTextArgument="Receivable Group ID" CvType="Text" DesignTimeRectangle="738, 258, 180, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-ReadOnlyLabel' tag='TD' aaname='Receivable Group ID' check:text='Receivable Group ID' /&gt;" Guid="1b105801-1027-4d01-ac78-5a58119d8ab4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a02683943c443e43022767c6bcdcf834.png" xmlns="">0RkyJUmWrnU2b4XEzhhK6yw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

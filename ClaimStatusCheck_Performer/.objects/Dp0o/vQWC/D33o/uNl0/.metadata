@@ -1,0 +1,14 @@
+﻿{
+  "Name": "SIGNED",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uNl0TxmYQUuKAhFT42A2ZQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/uNl0TxmYQUuKAhFT42A2ZQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg",
+  "Created": "2025-05-12T10:23:38.5976829Z",
+  "Updated": "2025-05-12T10:23:38.5976829Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "South Carolina",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "P7hwGhHAoEO2jh9Lxjl5IQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/P7hwGhHAoEO2jh9Lxjl5IQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/4aX4tmujpEquubNGkBG8Aw",
+  "Created": "2025-06-09T06:38:19.3550234Z",
+  "Updated": "2025-06-09T06:38:19.3550234Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

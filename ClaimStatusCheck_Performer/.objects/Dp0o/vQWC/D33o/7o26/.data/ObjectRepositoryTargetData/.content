@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FyQJzOEMlEaobe6QSvjkEA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e1da8071-9fea-470b-a32f-fef97779a38e" DesignTimeRectangle="747, 467, 98, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='33. BILLING PROVIDER INFO*PH #' class='cs-SuperTable-cell' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tableCol='8' tag='TD' class='cs-SuperTable-cell h-npi-provider-id' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-cell h-npi-provider-id' tag='TD' aaname='1124248752' check:text='1124248752' /&gt;" Guid="f036815e-a2c2-41ce-89e7-fc9de7bd2b24" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [TRAIN 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e1da8071-9fea-470b-a32f-fef97779a38e" CvTextArea="213, 468, 37, 11" CvTextArgument="SIGNED" CvType="Text" DesignTimeRectangle="214, 467, 162, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-cell' tag='TD' aaname='SIGNED' check:text='SIGNED' /&gt;" Guid="93003a17-2c1b-4b66-94dd-99899e1cc5f8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0dad93543e28997855bc41c750903fd9.png" xmlns="">0C0w-l-s2VUutGigvjxVONQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

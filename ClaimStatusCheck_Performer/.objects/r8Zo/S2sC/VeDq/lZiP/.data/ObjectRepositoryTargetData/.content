@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MzszQXBopkmjyzQOcBnkLQ" Reference="0OjwGQNFZEimLaR_hhDcng/lZiPrVuP8ECKvSFVcZXnyQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="633e2aa6-7617-43a2-b8ad-6818315f3e3a" DesignTimeRectangle="62, 613, 44, 15" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='claimsTable' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' colName='*Status' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='claimsTable' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' colName='Status' class='badge badge-danger' aaname='DENIED' check:text='DENIED' /&gt;" Guid="d7319067-3b5c-4e43-b51d-155ef42965fc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="6325327895853208dea97a253bb8db85.png" xmlns="">0p_DSS66ZiUWYIFel3X481w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Toggle Select Options",
+  "Type": "Element",
+  "Id": "n8f6RL6iA0y-UhunIsWdqw",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/n8f6RL6iA0y-UhunIsWdqw",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/hwrVe3keg0C8n1VcZ4TZiA",
+  "Created": "2025-05-15T09:04:13.5210175Z",
+  "Updated": "2025-05-15T09:04:13.5210175Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

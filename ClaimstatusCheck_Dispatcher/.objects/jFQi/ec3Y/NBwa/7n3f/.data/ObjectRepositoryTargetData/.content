@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8V3WJVIl5UWfR5I_mn_myg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="501, 406, 179, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='combobox' tableCol='3' tableRow='1' tag='INPUT' aaname='Comparison combo box' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' type='text' class='IccComboBoxInput' tag='INPUT' aaname='Comparison combo box' /&gt;" Guid="a9ef0230-a40e-4534-b673-7980a06b7c45" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [PROD 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="35e0a3dca8e1ac84a8cd2c8d76b51db3.png" xmlns="">0NqNbwefRh0W0amLnWkElRg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

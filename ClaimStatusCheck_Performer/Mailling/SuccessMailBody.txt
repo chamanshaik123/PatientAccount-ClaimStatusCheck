@@ -1,0 +1,24 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+<style type="text/css">
+        body {
+            font-family: Calibri;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .mapping {
+            background-color: #D3D4D7;
+            color: black;
+            padding: 1px;
+        }
+    </style>
+<!-- Instruct the web browser control to use IE 6 to render the page. -->
+<meta content="IE=6" http-equiv="X-UA-Compatible" /></head>
+<body>
+<p class="MsoNormal" style="margin: 0px"><span lang="EN-US"><font color="#7f7f7f">Hi Team,<o:p></o:p></font></span></p>
+<p class="MsoNormal" style="margin: 0px"><span lang="EN-US"><font color="#7f7f7f">Processing is completed for Claim Status Check Process Performer.<o:p></o:p></font></span></p>
+<p class="MsoNormal" style="margin: 0px"><span lang="EN-US"><o:p><font color="#7f7f7f">&nbsp;</font></o:p></span></p>
+<p class="MsoNormal" style="margin: 0px"><span lang="EN-US"><font color="#7f7f7f">* This message was sent from an automated process. Please do not reply to this message. *<o:p></o:p></font></span></p>
+<p class="MsoNormal" style="margin: 0px"><span lang="EN-US"><font color="#7f7f7f">Thanks,<br />Claim Status Check BOT</font><o:p></o:p></span></p></body></html>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": " Patient Date of Birth",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Oftg82c1Sk2-txBJuzc3eA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/Oftg82c1Sk2-txBJuzc3eA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/IZZ_Fhld6k2us9bvN05C4Q",
+  "Created": "2025-05-16T08:36:23.3949539Z",
+  "Updated": "2025-05-16T08:36:23.3949539Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

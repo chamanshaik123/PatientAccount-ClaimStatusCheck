@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hjNXCXISF0-b2lzWWrfXRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="2774c75c-09c6-47f0-beec-34da0ef3700a" DesignTimeRectangle="784, 101, 132, 27" DesignTimeScaleFactor="0.800000011920929" FullSelectorArgument="&lt;webctrl aaname='    ' css-selector='body&amp;gt;navigation&amp;gt;div&amp;gt;top-nav&amp;gt;nav&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='    ' type='' tag='DIV' class='nav-select2-dropdown navbar-form ng-scope' check:innerText='West Virginia' /&gt;" Guid="425c9f81-6feb-42b5-b53d-d1d595bbcafb" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials - Less than 30 minutes left until session expiration.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd73827e88e146071375a8735ae7cbef.png" xmlns="">0-Px8O-dXbE2jFKCLhrYJRA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

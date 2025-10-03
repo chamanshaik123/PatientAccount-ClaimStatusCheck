@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PhHeET0XLEePMOTDG-aOHw" Reference="0OjwGQNFZEimLaR_hhDcng/SqRlsHJNMECQaGm5G2kciA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ae31d1ab-f417-4cac-8c9d-842baeb4a55f" DesignTimeRectangle="861, 293, 197, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='1a. INSURED*I.D. NUMBER*' colName='1a. INSURED*I.D. NUMBER*' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tableRow='4' tag='TD' class='cs-SuperTable-lower-cell' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='MM DD YY MM DD YY' tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-lower-cell' tag='TD' /&gt;" Guid="218e454e-69d0-4bb0-bb1d-a27528c241af" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="861, 266, 197, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='MM DD YY MM DD YY' tag='TABLE' /&gt;&lt;webctrl type='' class='cs-SuperTable-upper-cell' tag='TD' aaname='1a. INSURED&amp;apos;S I.D. NUMBER (For Program In Item 1)' check:text='1a. INSURED&amp;apos;S I.D. NUMBER (For Program In Item 1)' /&gt;" Guid="9aeb0c34-394d-4322-af7b-0ade0fb44a61" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="040027ec96050d4febf09a2bdc86549e.png" xmlns="">0a2QRzYn1rEig_ECIjYj-OQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

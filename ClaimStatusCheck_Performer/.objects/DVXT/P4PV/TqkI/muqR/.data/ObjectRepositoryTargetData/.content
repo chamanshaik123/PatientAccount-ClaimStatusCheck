@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pPNAjXISwkiiUKFbZZr11w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="4837e695-3a60-4184-9e78-b507fb3ec5f6" CvTextArea="33, 183, 50, 22" CvTextArgument="Apps" CvType="Text" DesignTimeRectangle="35, 166, 191, 39" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Apps' parentid='home-screen' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apps' parentid='home-screen' tag='DIV' type='' class='toolbar-header _ctxstxt_AllApps' check:text='Apps' /&gt;" Guid="38ed115f-30da-4637-aa1b-9406e62fb000" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0955527375f55f45459da5d0efb6b9f4.png" xmlns="">0ayTCNttQrkO7gzaQ4vqfjw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

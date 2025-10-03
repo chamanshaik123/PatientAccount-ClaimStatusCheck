@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TS4wS18YUE-cv7TV_VrIMQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="ca0675e8-3cc9-47ac-bbf5-4c19b31a10aa" DesignTimeRectangle="693, 475, 383, 44" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='domain' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='domain' tag='SELECT' type='' class='' aaname='Domain:' /&gt;" Guid="7a3d1684-2a96-4648-90e8-3896f001edf1" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ca0675e8-3cc9-47ac-bbf5-4c19b31a10aa" CvTextArea="536, 487, 61, 15" CvTextArgument="Domain:" CvType="Text" DesignTimeRectangle="538, 486, 60, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Domain:' parentid='explicit-auth-screen' tag='LABEL' type='' class='label plain' check:innerText='Domain:' /&gt;" Guid="123cf136-faa5-40d4-9d5f-f20c7e589d96" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e94107149b5c6551b850747c8bca7b85.png" xmlns="">0gZdd2B5b-ECn5l6V5qb-mA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

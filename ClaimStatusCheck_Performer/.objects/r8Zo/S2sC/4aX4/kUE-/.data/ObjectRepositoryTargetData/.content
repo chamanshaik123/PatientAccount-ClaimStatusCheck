@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OomX1jdogkyF2P2t3SrLzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="48b39295-82e4-4f88-824e-3a9f156d2390" DesignTimeRectangle="21, 364, 185, 147" DesignTimeScaleFactor="0.800000011920929" FullSelectorArgument="&lt;webctrl tag='DIV' class='card-block text-center ng-scope' innertext='*CS*Claim Status*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='card-block text-center ng-scope' innertext='*CS*Claim Status*' type='' aaname='                                             ' check:text='CS&amp;#xA;    &amp;#xA;  &amp;#xA;&amp;#xA;  &amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;          Claim Status' /&gt;" Guid="630f4466-c1a6-436b-b005-4a21e6f00f03" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="03b65051ddd9bda5d0a37787b1db3883.png" xmlns="">0e_wYU0wuVE2R94g1tKDfXA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

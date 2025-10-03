@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Welcome to CernerWorks!(1)",
+  "Type": "Screen",
+  "Id": "C0X_RNfIfUe3nF8ECCJPEw",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/C0X_RNfIfUe3nF8ECCJPEw",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/wrc04XCvs0-Mu7oGVKbenw",
+  "Created": "2025-04-21T06:59:46.7216113Z",
+  "Updated": "2025-04-21T06:59:46.7216113Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

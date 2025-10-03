@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Filter RPA BOT RPA BOT…",
+  "Type": "Element",
+  "Id": "XoT1a4H7GkKzACRMB3Wgow",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/XoT1a4H7GkKzACRMB3Wgow",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/NBwajwRC7UKft5Xr_vTsNg",
+  "Created": "2025-06-24T15:44:17.0550979Z",
+  "Updated": "2025-06-24T15:44:17.0550979Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

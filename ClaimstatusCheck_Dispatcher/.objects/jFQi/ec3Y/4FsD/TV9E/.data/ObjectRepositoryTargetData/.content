@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ViqZNEjt00mBSum6u1oxAA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="623, 415, 53, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='LABEL' id='ctlReadOnly_Summary' innertext='The filter produced no results in the worklist*will not be applied.' /&gt;&lt;nav up='9' /&gt;&lt;webctrl id='ctlButton_OneButton__' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlButton_OneButton__' tag='BUTTON' type='button' class='IccButtonGradient' aaname='Close' check:text='Close' /&gt;" Guid="49eaf1b4-4f7f-4c90-848f-54d6561e71a0" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="97c061cae026506bcf53c123aff2bf5f.png" xmlns="">0Sta7YY4CXk24MaFTeWoqkw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

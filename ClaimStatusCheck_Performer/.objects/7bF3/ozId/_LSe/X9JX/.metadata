@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Check App State- Millennium login page",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "X9JXEmt5zEON0BMTbngnbA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/X9JXEmt5zEON0BMTbngnbA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/_LSeAvLnsEOdQkwYRqHz2A",
+  "Created": "2025-05-06T06:10:57.1307161Z",
+  "Updated": "2025-05-06T06:10:57.1307161Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

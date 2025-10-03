@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9xdDCNt2NE2ZePmZG53WcA" Reference="0OjwGQNFZEimLaR_hhDcng/VTkDvf2VxEC6DBwz6EBQvA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="0dca6be2-13d9-472c-95fe-2b384e976785" DesignTimeRectangle="1226, 627, 49, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backButtonType2' tag='BUTTON' aaname='Back' type='button' class='navigationButton' check:text='Back' /&gt;" Guid="932cb1c4-a956-4aaf-a867-a1f96fbced60" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="c3f44fbfd54bdfcdb9925eb77f044696.png" xmlns="">0FULNUWDZV0COUDr-emf0eA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

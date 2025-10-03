@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="u_gn0lc9wkOWhR1GUOMCuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="565207de-0420-43ec-b352-2d3ac92b9ad8" DesignTimeRectangle="63, 64, 183, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd title='Invalid Username and/or Password.' aaname='Invalid Username and/or Password.' /&gt;" FuzzySelectorArgument="&lt;wnd title='Invalid Username and/or Password.' aaname='Invalid Username and/or Password.' check:text='Invalid Username and/or Password.' /&gt;" Guid="71b8b859-be0e-4a30-9c07-a0a092c2997f" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' isremoteapp='1' title='Error:  Security Failure.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a1344e55bd5653b38e24bb8923153a72.png" xmlns="">0_Wcw7kXFp0aAEb0LEtZyTQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

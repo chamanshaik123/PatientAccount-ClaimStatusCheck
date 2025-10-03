@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6RudmiXsY0u4-6CFSOE8Tw" Reference="0OjwGQNFZEimLaR_hhDcng/7oql0ddpskqQpNMIUxo3wQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="90635451-2a3c-4424-9e35-b1f5914dfdd8" DesignTimeRectangle="930, 322, 129, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tableCol='2' tag='DIV' parentclass='Claim-GridTRB' rowName='56 NPI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' parentclass='Claim-GridTRB' rowName='56 NPI' class='gwt-Label Claim-Text' /&gt;" Guid="5393de2e-c2e0-4526-9f98-7a2db25b0d85" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="1b8052693b372f6e445f1e323362f29c.png" xmlns="">0T7lL02jwykqYcSwAeW0s-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ng_PXuEKCkqX-Onfmsdh6A" Reference="0OjwGQNFZEimLaR_hhDcng/Q5gTZizPwUiCpeffOhe8aQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="aff195e1-5fca-4675-b654-299baebb6973" CvTextArea="19, 497, 212, 18" CvTextArgument="Results (Displaying 0 - 0 of 0)" CvType="Text" DesignTimeRectangle="20, 497, 210, 17" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='results' tag='SPAN' aaname='Results (Displaying 0 - 0 of 0)' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='results' tag='SPAN' aaname='Results (Displaying 0 - 0 of 0)' type='' class='mb-0 h5' check:text='Results (Displaying 0 - 0 of 0)' /&gt;" Guid="bb693f71-75cf-4ce7-92e9-386680ccb9f3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="7b77ca960e31d763130b2a2f19988034.png" xmlns="">0SKkWFjqorU-d6kqVCE1wOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iOycZG3PcU6sT5a_0EDqbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="9644c3cf-6899-4792-9842-edd96dd25949" DesignTimeRectangle="807, 109, 66, 12" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl class='av-nav-lg-inline' tag='SPAN' parentclass='select2-chosen' /&gt;" FuzzySelectorArgument="&lt;webctrl class='av-nav-lg-inline' tag='SPAN' parentclass='select2-chosen' type='' aaname='West Virginia' check:text='West Virginia' /&gt;" Guid="0ec83d8e-a082-42a0-b1aa-4e02cfb51bf6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3c5fbb8df07e36857857cad5e91f8fa5.png" xmlns="">0-1ykrRJO4EOLK4qjs67a0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

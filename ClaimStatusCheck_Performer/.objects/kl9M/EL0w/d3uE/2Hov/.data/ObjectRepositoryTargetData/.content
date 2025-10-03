@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7HXO7eMV2EqZuY72C3XB2Q" Reference="0OjwGQNFZEimLaR_hhDcng/2Hovj5pCrESFo93TfehOwg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="e2822ec4-173d-485b-91b5-556bf95cb53e" DesignTimeRectangle="352, 467, 48, 12" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='claimsTable' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='${0}' colName='Billed Amount' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='SPAN' colName='*Status' /&gt;&quot;, in_BillingAmount)]" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='claimsTable' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='badge badge-success' /&gt;" Guid="f22f8b05-f04c-4fee-8b23-30c0c152c198" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="ddba9047f1a115a3c95129881fcdee09.png" xmlns="">04vDf9OYwfki64xWvU34I2A</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="261.03" IsVariable="False" Name="in_BillingAmount" />
+    </scg:List>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

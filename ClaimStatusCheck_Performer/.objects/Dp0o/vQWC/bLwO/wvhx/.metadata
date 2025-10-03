@@ -1,0 +1,14 @@
+﻿{
+  "Name": "SFUPGRADESSI, RENDERING",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "wvhxoJuKjU2cdOITx3mvuw",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/wvhxoJuKjU2cdOITx3mvuw",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/bLwOHrrbTkirs1CEPriNDQ",
+  "Created": "2025-04-23T10:07:48.5292339Z",
+  "Updated": "2025-04-23T10:07:48.5292339Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

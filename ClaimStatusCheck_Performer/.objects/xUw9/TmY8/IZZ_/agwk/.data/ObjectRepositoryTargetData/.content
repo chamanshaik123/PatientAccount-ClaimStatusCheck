@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gQRyGrYqMU2ZdMTUcBPL8w" Reference="0OjwGQNFZEimLaR_hhDcng/agwkkUIng0uFssCpHlQuZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="344640d0-511c-439a-8a09-92eee5f896fd" CvElementArea="948, 414, 124, 34" CvTextArea="959, 424, 101, 13" CvTextArgument="Return to Results" CvType="Button" DesignTimeRectangle="950, 416, 120, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='Return to Results' tag='A' id='rtrn2Rslts' parentid='pageContainer' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='Return to Results' tag='A' id='rtrn2Rslts' parentid='pageContainer' type='' class='btn btn-light my-auto mx-1' check:text='Return to Results' /&gt;" Guid="1fe5cc9d-54b7-4fc1-a011-f0c396b68f16" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f69c27062b74949ea2c856daef9d445b.png" xmlns="">0GaljgdkT5kaIjWFwIHY1fw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

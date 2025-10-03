@@ -1,0 +1,13 @@
+﻿{
+  "Name": "IE Cerner Soarian [TRAIN 2025.01](3)",
+  "Type": "Screen",
+  "Id": "M4fpAwPhvk66j2dM5vwSAQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/M4fpAwPhvk66j2dM5vwSAQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/vQWCNOO8T0KBI1MCINyGoA",
+  "Created": "2025-05-19T11:06:30.8798421Z",
+  "Updated": "2025-05-19T11:06:30.8798421Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

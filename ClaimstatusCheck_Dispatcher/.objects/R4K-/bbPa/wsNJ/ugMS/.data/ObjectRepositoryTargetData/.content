@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="t34qmsPym02GvXL0LFag7g" Reference="O7jwmsldt0a3NKdfcatgIg/ugMSepQ-mUachwrOcNcu7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="86cf7acb-2895-4ce9-8f40-e6f60a966c3d" DesignTimeRectangle="653, 582, 591, 30" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='patientMemberId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='patientMemberId' tag='INPUT' type='text' class='is-untouched av-invalid form-control' aaname='* Member ID' /&gt;" Guid="8e9b7f34-663c-4229-b8d0-8dc5120c6dee" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="86cf7acb-2895-4ce9-8f40-e6f60a966c3d" CvTextArea="651, 562, 75, 14" CvTextArgument="* Member ID" CvType="Text" DesignTimeRectangle="653, 561, 73, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='patientMemberId-label' tag='LABEL' type='' class='' aaname=' Member ID' check:innerText='* Member ID' /&gt;" Guid="9133d378-3c76-48ad-a8eb-cb6a27c9efc9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fbfea15e28059590af0f09583bda710e.png" xmlns="">0DKQXQsgqF0y8P0pxDO6wEg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Select... Toggle Select…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "jMSVCJbjXkiCEnukjce1HA",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/jMSVCJbjXkiCEnukjce1HA",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/wsNJ4g6n2kKagvYBVxuSKw",
+  "Created": "2025-04-15T10:50:07.1415752Z",
+  "Updated": "2025-04-15T10:50:07.1415752Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

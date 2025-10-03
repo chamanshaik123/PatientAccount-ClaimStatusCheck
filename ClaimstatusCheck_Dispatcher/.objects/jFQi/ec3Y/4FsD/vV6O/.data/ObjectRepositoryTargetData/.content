@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8ZHVODqJAUKpADXp992wpw" Reference="O7jwmsldt0a3NKdfcatgIg/vV6OPduD4UG0zBor2fNeMw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="854c3cec-3c65-419e-9f3e-963712cc83f9" DesignTimeRectangle="231, 260, 48, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TD' aaname='{0}' colName='Worklist Name' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='TD' colName='Total' /&gt;&quot;, in_WorklistName)]" Guid="2ef61d54-9bf4-4abc-92bd-fbf131446569" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f5c78309fe3d75aaf4dfdaa82cf24fb6.png" xmlns="">0tLMc06Z2mUCAGLM94yxknA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="CAMC Commercial At Risk" IsVariable="False" Name="in_WorklistName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

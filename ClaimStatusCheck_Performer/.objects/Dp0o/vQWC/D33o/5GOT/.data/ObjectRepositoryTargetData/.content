@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0HL-Jra5D0WGVPe82h4cNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="8ef76b2a-7d03-4584-a601-c164e58872ce" DesignTimeRectangle="217, 250, 12, 12" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Patient and Insured Information*' colName='Patient and Insured Information*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="78c3a8d6-2c9a-4d28-b46f-9f91a19d4dfd" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8ef76b2a-7d03-4584-a601-c164e58872ce" CvTextArea="235, 248, 242, 14" CvTextArgument="Patient and Insured Information (Box 01 - 13)" CvType="Text" DesignTimeRectangle="236, 249, 835, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' class='gwt-Label' aaname='Patient and Insured Information (Box 01 - 13)' tag='DIV' check:text='Patient and Insured Information (Box 01 - 13)' /&gt;" Guid="e8cf061c-bbf8-4f3e-9d8a-2f59a1571bc7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="334af2a12bafda760f709394000c5ba8.png" xmlns="">0-8P_EC4f3EOQOGeJ0uJWuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

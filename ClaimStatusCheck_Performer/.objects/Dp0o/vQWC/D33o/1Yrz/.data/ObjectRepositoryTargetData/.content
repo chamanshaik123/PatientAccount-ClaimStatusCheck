@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OJFJPa1LlEekVywJD_F1pQ" Reference="0OjwGQNFZEimLaR_hhDcng/1YrzKI0hrkquFfuHKMLzjw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7ff0cf4a-ab5d-4baf-8efb-2894dae28c06" DesignTimeRectangle="933, 231, 47, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TBODY' aaname='*ZZREVELATE, ZZCLAIMID*Cigna*04/22/2025*63,070.00**' /&gt;&lt;webctrl tag='A' colName='Receivable Group ID' rowName='Receivable Group ID' type='' class='' aaname='1279666' check:text='1279666' /&gt;" Guid="0d34d681-7e1c-4076-8035-12a14dd3966b" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="7ff0cf4a-ab5d-4baf-8efb-2894dae28c06" CvTextArea="808, 230, 110, 13" CvTextArgument="Receivable Group ID" CvType="Text" DesignTimeRectangle="738, 229, 180, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-ReadOnlyLabel' tag='TD' aaname='Receivable Group ID' check:text='Receivable Group ID' /&gt;" Guid="6e719946-6ec9-42ce-b4a2-7bd1db2183ac" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="52f78f8b30d8e04824e62fe2820b8a61.png" xmlns="">0m3hrvIhJVUKyvV6R7cWxRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

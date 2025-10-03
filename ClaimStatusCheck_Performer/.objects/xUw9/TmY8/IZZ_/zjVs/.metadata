@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Subscriber is the same …",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "zjVss45gO0qZ2gUTJg99lQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/zjVss45gO0qZ2gUTJg99lQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/IZZ_Fhld6k2us9bvN05C4Q",
+  "Created": "2025-05-16T08:40:54.2979708Z",
+  "Updated": "2025-05-16T08:40:54.2979708Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

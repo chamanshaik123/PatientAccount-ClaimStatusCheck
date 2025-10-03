@@ -1,0 +1,14 @@
+﻿{
+  "Name": " Provider NPI",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Q-dnWMIne0aeqfYewFQH4w",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/Q-dnWMIne0aeqfYewFQH4w",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/wsNJ4g6n2kKagvYBVxuSKw",
+  "Created": "2025-04-15T11:14:57.6644227Z",
+  "Updated": "2025-04-15T11:14:57.6644227Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

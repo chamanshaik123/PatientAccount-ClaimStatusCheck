@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CLSTDENIAL",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "109Y3CG0bk2-WG1cK32TZQ",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/109Y3CG0bk2-WG1cK32TZQ",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/sIbHAi1fWU6P_l6ZZ-EhUg",
+  "Created": "2025-05-20T10:45:47.044815Z",
+  "Updated": "2025-05-20T10:45:47.044815Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

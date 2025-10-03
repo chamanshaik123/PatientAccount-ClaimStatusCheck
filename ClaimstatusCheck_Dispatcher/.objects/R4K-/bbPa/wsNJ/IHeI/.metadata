@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Select a Provider",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "IHeIxWxPq0-zmporM4waxQ",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/IHeIxWxPq0-zmporM4waxQ",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/wsNJ4g6n2kKagvYBVxuSKw",
+  "Created": "2025-04-15T10:59:21.4617115Z",
+  "Updated": "2025-04-15T10:59:21.4617115Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

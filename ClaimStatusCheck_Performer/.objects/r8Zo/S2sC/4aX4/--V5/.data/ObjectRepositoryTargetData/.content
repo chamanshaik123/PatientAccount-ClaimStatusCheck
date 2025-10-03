@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Wvm0MQkm2kCh24FxpPFuJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="88c4a1c4-34e1-4f33-ae77-edb43e4e0cba" DesignTimeRectangle="299, 135, 71, 37" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Clinical' parentid='availity-secondary-navbar-collapse' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Clinical' parentid='availity-secondary-navbar-collapse' tag='A' type='' class='dropdown-toggle dropdown-toggle-secondary ng-binding' check:innerText='Clinical' /&gt;" Guid="09c974cd-830c-4801-9cc3-f126956cf1fa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials - Less than 22 minutes left until session expiration.' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9e677ebbe49e88ec3d8ee171dd7eef71.png" xmlns="">0Ij_IYUW3XEmLBbDFg34Bwg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

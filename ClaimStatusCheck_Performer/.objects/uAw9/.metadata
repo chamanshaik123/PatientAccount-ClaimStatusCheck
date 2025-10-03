@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Availity Essentials - Less than 30 min",
+  "Type": "App",
+  "Id": "uAw9KYzZ206qN1ttdgEd1Q",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/uAw9KYzZ206qN1ttdgEd1Q",
+  "Created": "2025-05-22T09:54:00.0767202Z",
+  "Updated": "2025-05-22T09:54:00.0767202Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

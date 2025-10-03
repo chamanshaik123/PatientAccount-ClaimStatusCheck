@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AZYjUKvfrEaU4SOg3fPXDg" Reference="0OjwGQNFZEimLaR_hhDcng/DzfUCzK-VkeyQ9p4e-sGFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="17cbc0b6-570c-46a7-86b5-2eb6d5f851ec" DesignTimeRectangle="866, 601, 59, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Cancel' class='IccButtonGradient' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Cancel' class='IccButtonGradient' type='button' check:text='Cancel' /&gt;" Guid="283a8ac4-9d67-4ffe-80ad-611b8721c942" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [TRAIN 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="d08351179e4ef9f1ce15260916b5f48c.png" xmlns="">0HSeeUqnd30SYuI2-9onzuQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

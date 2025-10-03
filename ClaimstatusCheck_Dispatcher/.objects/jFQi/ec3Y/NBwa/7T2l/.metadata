@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Manage Filters",
+  "Type": "Element",
+  "Id": "7T2l6QHIkU-cje8YBcpecA",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/7T2l6QHIkU-cje8YBcpecA",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/NBwajwRC7UKft5Xr_vTsNg",
+  "Created": "2025-06-26T08:15:25.841586Z",
+  "Updated": "2025-06-26T08:15:25.841586Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

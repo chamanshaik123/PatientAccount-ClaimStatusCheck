@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Comment Code",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "zv82Pl60VU6--sDXDHRT9A",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/zv82Pl60VU6--sDXDHRT9A",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/sIbHAi1fWU6P_l6ZZ-EhUg",
+  "Created": "2025-05-20T10:42:08.7922585Z",
+  "Updated": "2025-05-20T10:42:08.7922585Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

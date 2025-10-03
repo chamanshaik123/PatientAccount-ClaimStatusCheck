@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="auU6MRCWwUWxCNVSUYt3nw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="87ed8448-045a-42a7-b032-fb5a62236dab" DesignTimeRectangle="488, 236, 30, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='ctlIccNumericEdit4Text*' tag='INPUT' name='IccNumericEdit4' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlIccNumericEdit4Text*' tag='INPUT' name='IccNumericEdit4' type='text' class='IccNumericEditRequiredWarning' aaname='' /&gt;" Guid="6173f1a9-4a84-4280-94e3-e8f6d01eb90c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="87ed8448-045a-42a7-b032-fb5a62236dab" CvElementArea="424, 242, 14, 13" CvTextArea="443, 242, 11, 12" CvTextArgument="In" CvType="RadioButton" DesignTimeRectangle="426, 241, 55, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='ctlInOnButtonGroup' type='' class='IccRBChecked' tag='SPAN' aaname='In' check:text='In' /&gt;" Guid="2c54f6d0-c3e6-417c-9e5f-f2dd1fbe82ea" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9a6034b917294ae278900b2374fb55a0.png" xmlns="">07nlhP0LIXkWpoDAm73y_1A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

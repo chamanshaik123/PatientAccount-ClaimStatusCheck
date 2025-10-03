@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jvR58UAQVUuKLj-fdqUZrQ" Reference="O7jwmsldt0a3NKdfcatgIg/HvqwSDDS3UuAf60GnSufEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="b12f0853-490b-4bdd-b583-fb52c353c5d9" DesignTimeRectangle="496, 388, 220, 39" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='code' tag='INPUT' aaname='Code' /&gt;" FuzzySelectorArgument="&lt;webctrl id='code' tag='INPUT' aaname='Code' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1duwal8' /&gt;" Guid="f5a03d09-c251-4cca-acd8-0c2a5f1027cf" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b12f0853-490b-4bdd-b583-fb52c353c5d9" CvTextArea="495, 365, 40, 15" CvTextArgument="Code" CvType="Text" DesignTimeRectangle="496, 362, 38, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='code-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='Code' check:innerText='Code' /&gt;" Guid="61990f9a-5e32-4e1b-aa7c-291b596460e2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fe432e32cd6e304026fc359730c23dda.png" xmlns="">0zLv4OuLGR0qs13GVpR8jAA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

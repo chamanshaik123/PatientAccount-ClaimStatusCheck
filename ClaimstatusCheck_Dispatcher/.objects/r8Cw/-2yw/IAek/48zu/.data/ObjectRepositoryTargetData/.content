@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HVAjgEEODEKcAzlkXkzYbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="cd539665-e4b9-4522-bcf9-8de4bacc64f7" DesignTimeRectangle="207, 242, 166, 24" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='Domain :' role='combo box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Domain :' role='combo box' automationid='' /&gt;" Guid="28b018c9-e3ce-4bf1-9924-b308350db63d" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cd539665-e4b9-4522-bcf9-8de4bacc64f7" CvTextArea="206, 225, 54, 14" CvTextArgument="Domain :" CvType="Text" DesignTimeRectangle="207, 224, 166, 16" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1008' title='&amp;amp;Domain :' /&gt;&lt;ctrl name='Domain :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1008' title='&amp;amp;Domain :' /&gt;&lt;ctrl name='Domain :' role='text' automationid='' check:text='Domain :' /&gt;" Guid="90238a98-68f2-4793-83c9-c4467e62b81f" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d4890623b71767cebcfa35efad55e16f.png" xmlns="">0mmGce4i2A0SnzwFVQx-CcQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

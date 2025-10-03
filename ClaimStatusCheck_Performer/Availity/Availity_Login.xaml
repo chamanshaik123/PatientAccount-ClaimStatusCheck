@@ -1,0 +1,607 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Availity_Login" this:Availity_Login.in_AvailityURL="https://apps.availity.com/web/onboarding" this:Availity_Login.in_AvailityCredentialsAssetName="Availity_Credentials" this:Availity_Login.in_SecurityKey="WJY53TVL36GEPQ7C3HFHDWRAJU" this:Availity_Login.in_ClaimStatusDashbordURL="https://apps.availity.com/public/apps/home/#!/loadApp?appUrl=https:%2F%2Fessentials.availity.com%2Fstatic%2Fweb%2Fpost%2Fcs%2Fenhanced-claim-status-ui%2F%23%2Fdashboard" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:ut="clr-namespace:UiPathTeam.TwoStepAuthentication;assembly=UiPathTeam.TwoStepAuthentication" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_AvailityURL" Type="InArgument(x:String)" />
+    <x:Property Name="in_AvailityCredentialsAssetName" Type="InArgument(x:String)" />
+    <x:Property Name="in_SecurityKey" Type="InArgument(x:String)" />
+    <x:Property Name="in_ClaimStatusDashbordURL" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Availity_Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPathTeam.TwoStepAuthentication</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPathTeam.TwoStepAuthentication</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Availity_Login" sap:VirtualizedContainerService.HintSize="611,451.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message- Availity Login" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Launch/Login Availity started&quot;]" />
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="552,2479" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ContinueOnError="True" DisplayName="Chrome Availity Essentials" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="a5435e06-2967-4d9a-9169-02d975115e3c" Timeout="3" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message- Closing Availity Instances" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Closing Availity open instances&quot;]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1296, 696" BrowserType="Chrome" ContentHash="5IwXw3a0vk6cFhgJuq0-ag" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVDhPjZJbSFNxHMf/FhFKiA4r2X3n8t8ZZD0FQfYW4lME3SB6sxfFypGFltW0i0tzzYbENFFDTQ00Na2UmoyMBFEzoodug6IIpNzO+f/PVf/tjEMPkbXP2/cCv//lB/5ErIN71KCngW+ktxlW+ojnYaFwiVW0ADeNmmheaqEZI/o/BICMRA2MYR97Xdc4yAwJITqaCtNBqILeRJX7iyHBbBhsEFoYjFqZfYa1NsulBbl8Jcvz1fCqds1dItbDai3oPoZamHYhTMfIAFhvVP+OUMG2x09zk0IN00f8HEH1cIy0cURopoNim3NR7nKd03vKiGXXaiR/ZDW6ObIybwqThUwLEE65t+MKD4mf9LCoDu7kfcxbwc9Wohv0Eg5Ai9TpKsJdzoTUb98rDVmR9tTcoU7lXdTmcqPqfNY04MvcU4kTXEfqKEn4WniE3OQIbmAPGBaQ71LV0n0HlgZtjYYFtJmc/crspu8gXgaVH+VcgW5+9loz0WX2FfLDBdzEhFLNJEqPIyQP2JflIfthXft8YJ0yk/NRncuuBfFS7rHs9XxCZ+CE5IMxwcdGRD9lF5ooSQjQxcn7H8SdLozvOY6KwxZZHTUXas9Nx+Vp0xJ5BzYCkpwqej0l6Kz7inSBKycBa6Y+JbkHXnSLei+2M91qr1OSex1v1HHbivZoa1iOmr5pL0yH9N6aEAIy+JDrA75NN5M+h0ftt++WBimoTOT3a5G8l0bt3yQXqQi1UurPDmeOrqVxG60+ySfk2ZYdqUI6oDvUBOqkJkk3k608sLxWxsy/fywtcJfVknzImPrQtaQM2xbJuCnbiNKH9Nhz1TFn8ddRc5ZhGQDwC3GyLsoD1Ih6AAAAAElFTkSuQmCC" InformativeScreenshot="96de9b359b69698cf0c62f0376a15815.jpg" Reference="0OjwGQNFZEimLaR_hhDcng/hwrVe3keg0C8n1VcZ4TZiA" Selector="&lt;html app='chrome.exe' title='*Availity Essentials*' /&gt;" Title="Availity Essentials" Version="V1" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Availity Essentials(1)" sap:VirtualizedContainerService.HintSize="518,2362" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,2072" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="AvailityUserName" />
+                      <Variable x:TypeArguments="x:String" Name="GoogleToken" />
+                      <Variable x:TypeArguments="x:String" Name="Region" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State 'User ID'" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears- Availity Login Page" sap:VirtualizedContainerService.HintSize="450,1194" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="ss:SecureString" Name="AvailityPassword" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_AvailityCredentialsAssetName]" CacheStrategy="None" DisplayName="Get Credential- Availity" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[AvailityPassword]" Username="[AvailityUserName]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'User ID'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Text="[AvailityUserName]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="f6b29faa-a876-4eb3-8064-b0dae87985d5" ContentHash="KneRphzTDkq1LIK0L2X3xw" DesignTimeRectangle="110, 319, 428, 39" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1duwal8' placeholder='Enter your user ID.' /&gt;" Guid="a8c10249-5d4d-4b99-b594-a7632afd1cd1" InformativeScreenshot="3b8a3584975c4ba3015c4f15a7a3b4de.png" IsResponsive="True" Reference="O7jwmsldt0a3NKdfcatgIg/SnCFC8nUp0mVC3mTa9EBHQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="f6b29faa-a876-4eb3-8064-b0dae87985d5" CvTextArea="110, 296, 55, 15" CvTextArgument="User ID" CvType="Text" DesignTimeRectangle="110, 293, 54, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='userId-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='User ID' check:innerText='User ID' /&gt;" Guid="d15493c1-4e22-498b-afa8-8792932b764b" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" SecureText="[AvailityPassword]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="907af2ff-53d4-4037-aff6-c1de15962724" ContentHash="0LAMDKkf1Ee6JUBjgZ1y7A" DesignTimeRectangle="110, 425, 376, 39" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' aaname='Password' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' aaname='Password' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-1r1wf8p' placeholder='Enter your password.' /&gt;" Guid="5a7dfdfa-f299-4f4b-8d58-ad25c4387020" InformativeScreenshot="790d4299e97670bfd148943f058660cc.png" Reference="O7jwmsldt0a3NKdfcatgIg/prLGYA2tMEm2H1XRlX59AA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="907af2ff-53d4-4037-aff6-c1de15962724" CvTextArea="109, 402, 72, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="110, 399, 71, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='password-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='Password' check:innerText='Password' /&gt;" Guid="2fe15d84-1704-4c46-8336-a8ca8189dee5" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="70b0a14b-5d44-494b-90a9-25f9f6774f83" ContentHash="JF1Heicvd0WtISbeOooSJw" DesignTimeRectangle="110, 505, 428, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-1auhavx' aaname='Sign In' check:innerText='Sign In' /&gt;" Guid="5befa160-22ba-4cde-a15e-403a5e71c6fc" InformativeScreenshot="0a978b53f95e37cf73c0862f48f9d310.png" Reference="O7jwmsldt0a3NKdfcatgIg/YpFnMrKER0mcp6eHW_Tz1w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                          <uix:NCheckState DisplayName="Check App State 'Authenticate me using m…'" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1210" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message- MFA requested" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;MFA requested, performing Multi Factor Authentication steps&quot;]" />
+                                <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'INPUT'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                                  <uix:NCheck.Target>
+                                    <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="d56d72f4-63bd-4fb7-8b19-d1ed60bb059b" ContentHash="kse6xW9LTkKMjvkOCBpiqA" DesignTimeRectangle="486, 378, 40, 40" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl parentid='2fa-start-page-content-grid' tag='LABEL' innertext='Authenticate me using my Authenticator app' /&gt;&lt;webctrl tag='INPUT' name='choice' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='2fa-start-page-content-grid' tag='LABEL' innertext='Authenticate me using my Authenticator app' /&gt;&lt;webctrl tag='INPUT' name='choice' type='radio' class='PrivateSwitchBase-input css-1m9pwf3' aaname='' /&gt;" Guid="532686e7-f60a-49cd-bc9b-0ce5792bff60" ImageBase64="" InformativeScreenshot="4180b031be9f1d73ab73bac2d4042956.png" Reference="O7jwmsldt0a3NKdfcatgIg/cxLIAPX1ik-yRnAubXFyeA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NCheck.Target>
+                                </uix:NCheck>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="1023eeaf-9c17-4a1b-8caa-405ed8f0fd3d" ContentHash="v9ohYNy1l0iZxyaS6cMtEg" DesignTimeRectangle="1014, 568, 110, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Continue' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Continue' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation css-46cj23' check:text='Continue' /&gt;" Guid="7cf7ef97-5753-4e79-b5f1-513f78555a3d" InformativeScreenshot="77b577126f96a57c1a9a48b37239454e.png" Reference="O7jwmsldt0a3NKdfcatgIg/JYPt_usVXkW6D69bBpzQCA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <ut:GetGoogleToken DisplayName="Get Google Token- Availity" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GetGoogleToken_3" SecretKey="[in_SecurityKey]" Token="[GoogleToken]" />
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Text="[GoogleToken]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="b12f0853-490b-4bdd-b583-fb52c353c5d9" ContentHash="jvR58UAQVUuKLj-fdqUZrQ" DesignTimeRectangle="496, 388, 220, 39" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='code' tag='INPUT' aaname='Code' /&gt;" FuzzySelectorArgument="&lt;webctrl id='code' tag='INPUT' aaname='Code' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1duwal8' /&gt;" Guid="f5a03d09-c251-4cca-acd8-0c2a5f1027cf" InformativeScreenshot="fe432e32cd6e304026fc359730c23dda.png" IsResponsive="True" Reference="O7jwmsldt0a3NKdfcatgIg/HvqwSDDS3UuAf60GnSufEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="b12f0853-490b-4bdd-b583-fb52c353c5d9" CvTextArea="495, 365, 40, 15" CvTextArgument="Code" CvType="Text" DesignTimeRectangle="496, 362, 38, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='code-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='Code' check:innerText='Code' /&gt;" Guid="61990f9a-5e32-4e1b-aa7c-291b596460e2" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue(1)'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="c8f0f3ef-1f2d-4746-ba4c-29bce46f3bdf" ContentHash="Fjq1D52WdU2D6kbA6J4IeQ" DesignTimeRectangle="1014, 568, 110, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Continue' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Continue' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation css-46cj23' check:text='Continue' /&gt;" Guid="1622243a-5189-44cd-b5a8-4f8eeb6884bd" InformativeScreenshot="0d995675c42a6e7cc11556f94f19466c.png" Reference="O7jwmsldt0a3NKdfcatgIg/8lpoSOY-1E6Ylhnn3YpUkA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message- Availity Already launched" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Availity portal already launched, MFA not requested&quot;]" />
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="16ad25fe-761d-49c1-9180-04ce6d511953" DesignTimeRectangle="557, 417, 250, 19" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Authenticate me using my Authenticator app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Authenticate me using my Authenticator app' tag='SPAN' type='' class='MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-yi66zj' check:text='Authenticate me using my Authenticator app' /&gt;" Guid="3d020d4e-95ac-4a91-abff-0c4e384cc9f2" InformativeScreenshot="2f469f7ec2e67bbf1ff3f0a2ad0c0a72.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                          <uix:NGoToUrl DisplayName="Go To URL- ClaimStatus Dashboard" sap:VirtualizedContainerService.HintSize="416,105" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[in_ClaimStatusDashbordURL]" Version="V4" />
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NCheckState DisplayName="Check App State : Availity loged in" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears- Availity already loged in" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message- Availity already logged in" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Availity portal already logged in without requirment of Credentials&quot;]" />
+                                <uix:NGoToUrl DisplayName="Go To URL- ClaimStatus Dashboard" sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" Url="[in_ClaimStatusDashbordURL]" Version="V4" />
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear- Availity page" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message- Unexpected error" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Warn" Message="[&quot;Unable to launch Availity due to unexpected error&quot;]" />
+                                <Throw DisplayName="Throw- not able to launch Availity" Exception="[new SystemException(&quot;Availity portal not launched&quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/web/spc/errors" CVScreenId="1234b9a8-7742-4ccc-a4a4-0db725e1681f" ContentHash="93jklhyx2UCXr5L_gDh9ZQ" DesignTimeRectangle="57, 435, 1182, 23" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' parentclass='card-title' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' parentclass='card-title' type='' class='text-center error-title mb-3' aaname='Oops! Something&amp;apos;s wrong here...' check:text='Oops! Something&amp;apos;s wrong here...' /&gt;" Guid="118852b5-4a22-41f9-ad1e-1982db16d993" InformativeScreenshot="271d1068ffa38fa6c5f15e6aed3e3196.png" Reference="0OjwGQNFZEimLaR_hhDcng/xNJfyiQcHkCYucDNWMhsWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Error' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="8d4f80cd-a5c5-430c-92a8-52c5fa7c85be" ContentHash="1AF54KQFLk2UmFDInF5mbQ" DesignTimeRectangle="157, 295, 342, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1duwal8' placeholder='Enter your user ID.' /&gt;" Guid="0fe6aee0-9d6e-41b8-b53d-a71657f0c39e" InformativeScreenshot="d1e85a9687a934d102b23f24137145f8.png" IsResponsive="True" Reference="0OjwGQNFZEimLaR_hhDcng/iwnpA7xFJESDZ-TIQFWL3g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="8d4f80cd-a5c5-430c-92a8-52c5fa7c85be" CvTextArea="156, 275, 45, 13" CvTextArgument="User ID" CvType="Text" DesignTimeRectangle="157, 274, 43, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='userId-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='User ID' check:innerText='User ID' /&gt;" Guid="0caba332-f681-48d2-8081-bbea5344e043" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                    <ui:LogMessage DisplayName="Log Message- Claim status page launched" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Claim Status page launched Successfully&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click - Accept all cookies" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Timeout="5" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="apps.availity.com/public/apps/home" CVScreenId="4b116c78-3723-495e-9467-44a032470fa7" ContentHash="-as6yqP_nEyoukUsLceW8Q" DesignTimeRectangle="370, 135, 101, 37" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' aaname='Accept All Cookies' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='' aaname='Accept All Cookies' check:innerText='Accept All Cookies' /&gt;" Guid="0dc87e1e-5197-4a83-b31e-995155736fce" InformativeScreenshot="44299c8ebbed4dfaf13acc314d7c2bc5.png" Reference="0OjwGQNFZEimLaR_hhDcng/bXQ2E7FW1USVHL7H9n-sLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text- Region" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" TextString="[Region]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="a1c65d52-1ba6-4a6d-96e6-898b58e97c56" DesignTimeRectangle="719, 108, 84, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='region-select' tag='DIV' class='UserRegionsMenu__trigger' parentclass='NavDropdown__trigger' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='region-select' tag='DIV' class='UserRegionsMenu__trigger' parentclass='NavDropdown__trigger' type='' /&gt;" Guid="17c93cbf-01a5-42ff-81a7-10097132b04f" ImageBase64="" InformativeScreenshot="dd78659ad4cb4f98b15ee06fdf6ff51b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <If Condition="[Region=&quot;West Virginia&quot;]" DisplayName="If-Check if region is West Verginia" sap:VirtualizedContainerService.HintSize="450,1167" sap2010:WorkflowViewState.IdRef="If_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then- No Region Change Required" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message- Region is West virginia" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;West Virginia region selected already&quot;]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else- Change Region" sap:VirtualizedContainerService.HintSize="416,773" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message- Changing region to West Virginia" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Region Selected was &quot;+ Region+&quot; Changing it to West Virginia&quot;]" />
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,358" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - region" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="9b5f8983-6047-487e-a688-18cdbbf22034" ContentHash="pWbvobbrO0GVAi1epXzJRQ" DesignTimeRectangle="719, 108, 84, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='region-select' tag='DIV' class='UserRegionsMenu__trigger' parentclass='NavDropdown__trigger' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='region-select' tag='DIV' class='UserRegionsMenu__trigger' parentclass='NavDropdown__trigger' type='' /&gt;" Guid="57dbecee-1dfb-4981-ac02-889b83d922e4" ImageBase64="" InformativeScreenshot="712f214e662b79745f70bbecd83c7a66.png" Reference="0OjwGQNFZEimLaR_hhDcng/P7hwGhHAoEO2jh9Lxjl5IQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into - Region" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,241" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="WindowMessages" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Text="West Virginia[k(Enter)]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" DesignTimeRectangle="679, 198, 208, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='regions_filter' tag='INPUT' aaname='Filter' parentclass='SearchBox__input' /&gt;" FuzzySelectorArgument="&lt;webctrl id='regions_filter' tag='INPUT' aaname='Filter' parentclass='SearchBox__input' type='text' class='SearchBox__input--text' /&gt;" Guid="78dfffdf-fc1b-495a-8f92-09a94d3c117a" InformativeScreenshot="49bbad490630f6d5fd7b9641bc6c8976.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <uix:NSelectItem DelayBefore="3" DisplayName="Select Item 'West Virginia(3)'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="West Virginia" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Version="V4">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="50">
+                                <x:String>West Virginia</x:String>
+                                <x:String>Alabama</x:String>
+                                <x:String>Alaska</x:String>
+                                <x:String>American Samoa</x:String>
+                                <x:String>Arizona</x:String>
+                                <x:String>Arkansas</x:String>
+                                <x:String>California</x:String>
+                                <x:String>Colorado</x:String>
+                                <x:String>Connecticut</x:String>
+                                <x:String>Delaware</x:String>
+                                <x:String>District of Columbia</x:String>
+                                <x:String>Florida</x:String>
+                                <x:String>Georgia</x:String>
+                                <x:String>Guam</x:String>
+                                <x:String>Hawaii</x:String>
+                                <x:String>Idaho</x:String>
+                                <x:String>Illinois</x:String>
+                                <x:String>Indiana</x:String>
+                                <x:String>Iowa</x:String>
+                                <x:String>Kansas</x:String>
+                                <x:String>Kentucky</x:String>
+                                <x:String>Louisiana</x:String>
+                                <x:String>Maine</x:String>
+                                <x:String>Maryland</x:String>
+                                <x:String>Massachusetts</x:String>
+                                <x:String>Michigan</x:String>
+                                <x:String>Minnesota</x:String>
+                                <x:String>Mississippi</x:String>
+                                <x:String>Missouri</x:String>
+                                <x:String>Montana</x:String>
+                                <x:String>Nebraska</x:String>
+                                <x:String>Nevada</x:String>
+                                <x:String>New Hampshire</x:String>
+                                <x:String>New Jersey</x:String>
+                                <x:String>New Mexico</x:String>
+                                <x:String>New York</x:String>
+                                <x:String>North Carolina</x:String>
+                                <x:String>North Dakota</x:String>
+                                <x:String>Northern Mariana Islands</x:String>
+                                <x:String>Ohio</x:String>
+                                <x:String>Oklahoma</x:String>
+                                <x:String>Oregon</x:String>
+                                <x:String>Pennsylvania</x:String>
+                                <x:String>Puerto Rico</x:String>
+                                <x:String>Rhode Island</x:String>
+                                <x:String>South Carolina</x:String>
+                                <x:String>South Dakota</x:String>
+                                <x:String>Tennessee</x:String>
+                                <x:String>Texas</x:String>
+                                <x:String>Utah</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="essentials.availity.com/static/web/onb/onboarding-ui-apps/navigation" CVScreenId="e657a81b-f58c-40b0-b8ed-8518c635c166" ContentHash="b67xf_-Bekibut7zjbYo3g" DesignTimeRectangle="703, 96, 137, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' class='NavDropdown__trigger' parentclass='NavDropdown' parentid='region-select' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' class='NavDropdown__trigger' parentclass='NavDropdown' parentid='region-select' type='button' aaname='West Virginia' check:text='West Virginia' /&gt;" Guid="1cf19046-3c1e-4900-aab9-15dea1d4e05a" ImageBase64="" InformativeScreenshot="413cf370780e0b7ed1a39f5ca3f3288a.png" Reference="0OjwGQNFZEimLaR_hhDcng/9_B36QQ2g0SwPg-15cjCJg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NGoToUrl DelayBefore="3" DisplayName="Go To URL- ClaimStatus Dashboard" sap:VirtualizedContainerService.HintSize="382,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_6" Url="[in_ClaimStatusDashbordURL]" Version="V4" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click - Accept all cookies" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Timeout="5" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/public/apps/home" CVScreenId="4b116c78-3723-495e-9467-44a032470fa7" ContentHash="-as6yqP_nEyoukUsLceW8Q" DesignTimeRectangle="370, 135, 101, 37" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' aaname='Accept All Cookies' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='' aaname='Accept All Cookies' check:innerText='Accept All Cookies' /&gt;" Guid="0dc87e1e-5197-4a83-b31e-995155736fce" InformativeScreenshot="44299c8ebbed4dfaf13acc314d7c2bc5.png" Reference="0OjwGQNFZEimLaR_hhDcng/bXQ2E7FW1USVHL7H9n-sLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Clinical'" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Timeout="5" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="apps.availity.com/public/apps/home" CVScreenId="88c4a1c4-34e1-4f33-ae77-edb43e4e0cba" DesignTimeRectangle="299, 135, 71, 37" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Clinical' parentid='availity-secondary-navbar-collapse' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Clinical' parentid='availity-secondary-navbar-collapse' tag='A' type='' class='dropdown-toggle dropdown-toggle-secondary ng-binding' check:innerText='Clinical' /&gt;" Guid="09c974cd-830c-4801-9cc3-f126956cf1fa" InformativeScreenshot="9e677ebbe49e88ec3d8ee171dd7eef71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click - Accept all cookies" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="333293d2-4ced-4e85-8cf9-220cdb9d6fa4" Timeout="5" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="apps.availity.com/public/apps/home" CVScreenId="4b116c78-3723-495e-9467-44a032470fa7" ContentHash="-as6yqP_nEyoukUsLceW8Q" DesignTimeRectangle="370, 135, 101, 37" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' aaname='Accept All Cookies' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='' aaname='Accept All Cookies' check:innerText='Accept All Cookies' /&gt;" Guid="0dc87e1e-5197-4a83-b31e-995155736fce" InformativeScreenshot="44299c8ebbed4dfaf13acc314d7c2bc5.png" Reference="0OjwGQNFZEimLaR_hhDcng/bXQ2E7FW1USVHL7H9n-sLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1296, 696" BrowserType="Chrome" ContentHash="eSf1iq7K1kCSIQXqQ8VvFw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVDhPjZJbSFNxHMf/FhFKiA4r2X3n8t8ZZD0FQfYW4lME3SB6sxfFypGFltW0i0tzzYbENFFDTQ00Na2UmoyMBFEzoodug6IIpNzO+f/PVf/tjEMPkbXP2/cCv//lB/5ErIN71KCngW+ktxlW+ojnYaFwiVW0ADeNmmheaqEZI/o/BICMRA2MYR97Xdc4yAwJITqaCtNBqILeRJX7iyHBbBhsEFoYjFqZfYa1NsulBbl8Jcvz1fCqds1dItbDai3oPoZamHYhTMfIAFhvVP+OUMG2x09zk0IN00f8HEH1cIy0cURopoNim3NR7nKd03vKiGXXaiR/ZDW6ObIybwqThUwLEE65t+MKD4mf9LCoDu7kfcxbwc9Wohv0Eg5Ai9TpKsJdzoTUb98rDVmR9tTcoU7lXdTmcqPqfNY04MvcU4kTXEfqKEn4WniE3OQIbmAPGBaQ71LV0n0HlgZtjYYFtJmc/crspu8gXgaVH+VcgW5+9loz0WX2FfLDBdzEhFLNJEqPIyQP2JflIfthXft8YJ0yk/NRncuuBfFS7rHs9XxCZ+CE5IMxwcdGRD9lF5ooSQjQxcn7H8SdLozvOY6KwxZZHTUXas9Nx+Vp0xJ5BzYCkpwqej0l6Kz7inSBKycBa6Y+JbkHXnSLei+2M91qr1OSex1v1HHbivZoa1iOmr5pL0yH9N6aEAIy+JDrA75NN5M+h0ftt++WBimoTOT3a5G8l0bt3yQXqQi1UurPDmeOrqVxG60+ySfk2ZYdqUI6oDvUBOqkJkk3k608sLxWxsy/fywtcJfVknzImPrQtaQM2xbJuCnbiNKH9Nhz1TFn8ddRc5ZhGQDwC3GyLsoD1Ih6AAAAAElFTkSuQmCC" InformativeScreenshot="f7984278a5ca0ec7bbdc7a603d09790a.jpg" Reference="0OjwGQNFZEimLaR_hhDcng/4aX4tmujpEquubNGkBG8Aw" Selector="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" Title="Availity Essentials" Url="[in_AvailityURL]" Version="V1" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RetryScope>
+  </Sequence>
+</Activity>

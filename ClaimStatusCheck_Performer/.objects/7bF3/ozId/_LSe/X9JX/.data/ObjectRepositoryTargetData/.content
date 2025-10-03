@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tSP7tKgaoUeyXClbatihCA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1, 1, 580, 393" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;wnd ctrlid='1000' cls='Static' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1000' cls='Static' /&gt;" Guid="f171da19-7e1a-4932-b54e-908b9ae7c848" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5d96b087-de5c-4282-a2e5-84ee0ad2b4bf" CvTextArea="19, 371, 244, 14" CvTextArgument="Copyright © 2024, Oracle and/or its affiliates." CvType="Text" DesignTimeRectangle="1, 365, 632, 46" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1036' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1036' /&gt;" Guid="5977b1e2-65d8-4b44-a10b-2a27c9f98463" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="be2d47939d1d2ff04991304b1ddb57fe.png" xmlns="">0ItmyccJPBkednY79pxCwsA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

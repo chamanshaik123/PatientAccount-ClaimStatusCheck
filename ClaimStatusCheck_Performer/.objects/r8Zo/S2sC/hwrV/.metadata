@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Availity Essentials",
+  "Type": "Screen",
+  "Id": "hwrVe3keg0C8n1VcZ4TZiA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/hwrVe3keg0C8n1VcZ4TZiA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/S2sC1szwMkeO-MEqh7Lqtg",
+  "Created": "2025-05-13T11:54:05.4972657Z",
+  "Updated": "2025-05-13T11:54:05.4972657Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

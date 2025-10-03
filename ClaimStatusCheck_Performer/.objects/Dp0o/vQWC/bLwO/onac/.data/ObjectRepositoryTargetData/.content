@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uuE9CxJOVEaabgkEq9tL8g" Reference="0OjwGQNFZEimLaR_hhDcng/onac9rYpA0eLcQ3lEO01ow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="73372593-2548-4608-9062-ae548c40e01e" DesignTimeRectangle="242, 210, 28, 22" DesignTimeScaleFactor="1" ElementType="Cell" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TR' aaname='*{0}*' /&gt;&lt;webctrl tableCol='2' tag='TD' parentclass='CUI-Grid*Row' /&gt;&quot;, SelectorReference)]" FuzzySelectorArgument="&lt;webctrl id='workitems-table-inner' tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-GridColumn' tag='TD' aaname='' /&gt;" Guid="cde4a558-994c-4283-a8f7-37524f8d98fd" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="b1b00049b74f628819afe31bf712944e.png" xmlns="">0KqGFKnNMT0uMN_y4rp981w</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*WEBER, DANIEL*Hghmrk Bl Crss Bl Sh*06/26/2025*43.08*" Name="SelectorReference" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

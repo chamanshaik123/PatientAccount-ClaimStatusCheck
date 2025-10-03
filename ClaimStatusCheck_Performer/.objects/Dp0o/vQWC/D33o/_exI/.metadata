@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Receivable Group ID",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "_exIqAUGwU6oGus6xj5Rhg",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/_exIqAUGwU6oGus6xj5Rhg",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg",
+  "Created": "2025-06-10T10:22:13.6655399Z",
+  "Updated": "2025-06-10T10:22:13.6655399Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

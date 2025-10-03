@@ -1,0 +1,14 @@
+﻿{
+  "Name": "1a. INSURED'S I.D. NUMB…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "SqRlsHJNMECQaGm5G2kciA",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/SqRlsHJNMECQaGm5G2kciA",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/D33okLpOv0OSmfiJzxLWAg",
+  "Created": "2025-05-12T08:53:27.5364622Z",
+  "Updated": "2025-05-12T08:53:27.5364622Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

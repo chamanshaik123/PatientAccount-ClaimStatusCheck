@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gzHsA7Xhz0uVlZX-h1SZ1Q" Reference="0OjwGQNFZEimLaR_hhDcng/zhfRSxAUjUiJB9KlWo4VFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/public/apps/home" CVScreenId="8b813af1-9b53-4784-a737-aa186f436979" DesignTimeRectangle="37, 535, 291, 31" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='serviceDates-start' tag='INPUT' aria-label='From Date' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl id='serviceDates-start' tag='INPUT' aria-label='From Date' type='text' class='DateInput_input DateInput_input_1' placeholder='From Date' aaname='* Service Dates' /&gt;" Guid="fe75c5fa-5277-44e3-b00f-e47ccd7ce7c7" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8b813af1-9b53-4784-a737-aa186f436979" CvTextArea="35, 516, 92, 14" CvTextArgument="* Service Dates" CvType="Text" DesignTimeRectangle="37, 515, 90, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='newBodyFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='serviceDates_tooltip' tag='LABEL' type='' class='' aaname=' Service Dates' check:innerText='* Service Dates' /&gt;" Guid="5974e233-aa36-490f-9c5c-c2ed8b06d33e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e82abc0526016a7835073518d235a886.png" xmlns="">0nYTnq5K-1UCHdJjOHKj4hA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

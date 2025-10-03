@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Apps",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "muqRgVqSUUmhEkn10Xng8w",
+  "Reference": "0OjwGQNFZEimLaR_hhDcng/muqRgVqSUUmhEkn10Xng8w",
+  "ParentRef": "0OjwGQNFZEimLaR_hhDcng/TqkIZjEJAkKsBC-hMUcJ5g",
+  "Created": "2025-05-02T12:32:17.359314Z",
+  "Updated": "2025-05-02T12:32:17.359314Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

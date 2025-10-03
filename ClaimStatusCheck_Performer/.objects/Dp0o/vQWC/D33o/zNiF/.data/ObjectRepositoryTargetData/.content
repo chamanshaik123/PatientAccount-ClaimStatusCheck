@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WPHCFez2YkCLrvNt9bWlgw" Reference="0OjwGQNFZEimLaR_hhDcng/zNiFti1ZvkiJC2b8CGzUcA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="fae8547c-e8cd-4510-8fdb-ab1459c48d83" DesignTimeRectangle="216, 322, 15, 17" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Supplier Information*' colName='Supplier Information*' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='IMG' class='gwt-Image' parentclass='ClaimBlind-closed-header' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='gwt-Image' aaname='' tag='IMG' /&gt;" Guid="7191382a-8b15-42de-bc02-379c1e08fb81" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="fae8547c-e8cd-4510-8fdb-ab1459c48d83" CvTextArea="235, 322, 182, 14" CvTextArgument="Supplier Information (Box 25 - 33)" CvType="Text" DesignTimeRectangle="235, 322, 182, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' class='gwt-Label' aaname='Supplier Information (Box 25 - 33)' tag='DIV' check:text='Supplier Information (Box 25 - 33)' /&gt;" Guid="4328a00d-205f-45ac-ab67-08123edab52f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="18d7c279b67f16720a5bc985261ded72.png" xmlns="">0XEHXdF8CNUS77nqSB8F2fg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

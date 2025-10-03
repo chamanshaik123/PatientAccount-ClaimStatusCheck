@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NQbjleHFCkyBmmCluyxCag" Reference="0OjwGQNFZEimLaR_hhDcng/m8ZTDLbzUEuG4knvT58ELw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="373a92c4-63d9-4aa2-aa31-5cf9ce3767bd" DesignTimeRectangle="416, 241, 318, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TD' aaname='Patient Date of Birth' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='TD' colName='Patient Name' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='blind' tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-BaseFont' tag='TD' /&gt;" Guid="23d8dc26-f348-422d-8be0-6b95ca0f1edc" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="373a92c4-63d9-4aa2-aa31-5cf9ce3767bd" CvTextArea="306, 242, 110, 13" CvTextArgument="Patient Date of Birth" CvType="Text" DesignTimeRectangle="216, 241, 200, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='blind' tag='TABLE' /&gt;&lt;webctrl type='' class='CUI-ReadOnlyLabel' tag='TD' aaname='Patient Date of Birth' check:text='Patient Date of Birth' /&gt;" Guid="adcaca1f-a742-405e-97b1-3a08f5467af0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7f16218a9aab7abf3e35f6662379875c.png" xmlns="">0P2PZHLtBeEGKH2wZcxFM-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

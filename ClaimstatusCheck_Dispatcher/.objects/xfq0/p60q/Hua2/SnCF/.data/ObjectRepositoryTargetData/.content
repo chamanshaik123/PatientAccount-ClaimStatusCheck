@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KneRphzTDkq1LIK0L2X3xw" Reference="O7jwmsldt0a3NKdfcatgIg/SnCFC8nUp0mVC3mTa9EBHQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="f6b29faa-a876-4eb3-8064-b0dae87985d5" DesignTimeRectangle="110, 319, 428, 39" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userId' tag='INPUT' aaname='User ID' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1duwal8' placeholder='Enter your user ID.' /&gt;" Guid="a8c10249-5d4d-4b99-b594-a7632afd1cd1" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f6b29faa-a876-4eb3-8064-b0dae87985d5" CvTextArea="110, 296, 55, 15" CvTextArgument="User ID" CvType="Text" DesignTimeRectangle="110, 293, 54, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='userId-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='User ID' check:innerText='User ID' /&gt;" Guid="d15493c1-4e22-498b-afa8-8792932b764b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3b8a3584975c4ba3015c4f15a7a3b4de.png" xmlns="">0KdqI2nrr3EuOWuiMKocKdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
