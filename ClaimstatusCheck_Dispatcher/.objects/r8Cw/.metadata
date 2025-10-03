@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Millennium Logon",
+  "Type": "App",
+  "Id": "r8CwRpHYZkS3MebhlMtoKw",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/r8CwRpHYZkS3MebhlMtoKw",
+  "Created": "2025-04-09T06:32:57.2737178Z",
+  "Updated": "2025-04-09T06:32:57.2737178Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

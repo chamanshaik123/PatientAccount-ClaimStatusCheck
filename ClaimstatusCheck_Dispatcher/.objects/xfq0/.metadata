@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Availity Essentials",
+  "Type": "App",
+  "Id": "xfq0D01EDkeHAn3A90kK0g",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/xfq0D01EDkeHAn3A90kK0g",
+  "Created": "2025-04-11T07:09:09.0402387Z",
+  "Updated": "2025-04-11T07:09:09.0402387Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "BUTTON ctlIccComboBox16…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "4uPQquMR0Ue9L2ERC1K_2Q",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/4uPQquMR0Ue9L2ERC1K_2Q",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/NBwajwRC7UKft5Xr_vTsNg",
+  "Created": "2025-06-26T08:19:32.3514351Z",
+  "Updated": "2025-06-26T08:19:32.3514351Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

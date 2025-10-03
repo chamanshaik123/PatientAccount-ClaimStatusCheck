@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tPabV5V69ESejqV-jF9sYw" Reference="O7jwmsldt0a3NKdfcatgIg/DGcXlGFPB0aunQyd035R1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c74dfff5-abaa-4820-802b-61f6927be397" DesignTimeRectangle="438, 436, 47, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TR' aaname='*{0}*' /&gt;&lt;webctrl isleaf='1' tableCol='5' tag='DIV' /&gt;&quot;, Reference)]" Guid="4869f597-673e-40f0-a085-810b192f97f1" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [PROD 2025.01]' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="ea07b0c49621981a8143efe75c3cd684.png" xmlns="">0RZt8FrqYCUGd9FuQdv6-3g</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="Reference" />
+    </scg:List>
+    <x:String x:Key="ActivityType">MouseScrollSearchedElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

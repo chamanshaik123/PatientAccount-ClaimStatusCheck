@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EqvKYKORdE2UGc2G4ulLdQ" Reference="O7jwmsldt0a3NKdfcatgIg/l7tv36BUBkKbJJQYvVNyqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="0c616e48-1c37-4982-b1f2-2ea05ba38f4c" DesignTimeRectangle="35, 205, 82, 41" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='allAppsFilterBtn' tag='A' aaname='All*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='allAppsFilterBtn' tag='A' aaname='All*' type='' class='filter-button allApps _ctxstxt_AllAppsWithCount theme-highlight-color theme-highlight-border-color show' check:text='All (28)' /&gt;" Guid="327453b3-034a-4a0c-a0ef-af3d608d305d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="ac06261eb8d06fbc83aefd07f95ee9b7.png" xmlns="">0xCIdWgWt3kOxy32rNyFlyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

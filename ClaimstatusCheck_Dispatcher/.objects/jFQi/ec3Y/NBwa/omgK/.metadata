@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Filter RPA BOT Manage F…",
+  "Type": "Element",
+  "Id": "omgK-erFj0WR9tSHG_vtiw",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/omgK-erFj0WR9tSHG_vtiw",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/NBwajwRC7UKft5Xr_vTsNg",
+  "Created": "2025-06-26T08:12:14.0080356Z",
+  "Updated": "2025-06-26T08:12:14.0080356Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

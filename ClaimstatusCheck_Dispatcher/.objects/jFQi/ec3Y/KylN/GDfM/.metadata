@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Bl Crss Bl Shld CAMC",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "GDfMZ9yH9E64VBug3CcMCA",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/GDfMZ9yH9E64VBug3CcMCA",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/KylN6Z-zPkinOum4Yfz67Q",
+  "Created": "2025-06-24T05:26:51.9266619Z",
+  "Updated": "2025-06-24T05:26:51.9266619Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1JSumZWCQ0WuzG-7JG7vfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="958, 170, 81, 22" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='manageFilters' aaname='Manage Filters ' parentid='pageFilterMenuList' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manageFilters' aaname='Manage Filters ' parentid='pageFilterMenuList' tag='LI' type='' class='' check:text='Manage Filters' /&gt;" Guid="bca39b3b-bd1c-40f3-bc75-5d87bea365ba" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian [PROD 2025.01]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c3cf7c47b1a4a0f3023905da1fa9fa5d.png" xmlns="">08miShHF7b0eDtpkfP5H_tQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

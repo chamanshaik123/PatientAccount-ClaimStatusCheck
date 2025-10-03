@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gUrDgahQhUqcxecflAkSqA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="camcwvctx.cernerworkswan.com/Citrix/MOCKweb" CVScreenId="7d55c170-15a8-4371-ad0f-b7179a15e886" DesignTimeRectangle="693, 546, 385, 44" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='loginBtn' tag='A' aaname='Log On' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginBtn' tag='A' aaname='Log On' type='' class='button forms-authentication-button last-child default' check:text='Log On' /&gt;" Guid="a06aefdb-8f40-465f-8a62-65444826e185" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to CernerWorks!' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e4b8aac3539f7ce940c6a706136a44cd.png" xmlns="">0rj0sWg8pA0ymmIK0Glea5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

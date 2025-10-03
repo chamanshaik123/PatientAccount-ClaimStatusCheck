@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-qhLUaAG2kCozf3Gq-mhNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="623, 415, 53, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ctlButton_OneButton__' tag='BUTTON' type='button' aaname='Close' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctlButton_OneButton__' tag='BUTTON' type='button' aaname='Close' class='IccButtonGradient' check:text='Close' /&gt;" Guid="aa3c11c8-c3a7-4700-aceb-d4646e5f3c45" ImageBase64="" ScopeSelectorArgument="&lt;html app='revenuecycle.exe' htmlwindowname='saml' isremoteapp='1' title='Cerner Soarian*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5bad494df8b64925d8e855807acda140.png" xmlns="">05pQheUhAOkinAl-tAJTF0A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0LAMDKkf1Ee6JUBjgZ1y7A" Reference="O7jwmsldt0a3NKdfcatgIg/prLGYA2tMEm2H1XRlX59AA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="907af2ff-53d4-4037-aff6-c1de15962724" DesignTimeRectangle="110, 425, 376, 39" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' aaname='Password' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' aaname='Password' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-1r1wf8p' placeholder='Enter your password.' /&gt;" Guid="5a7dfdfa-f299-4f4b-8d58-ad25c4387020" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="907af2ff-53d4-4037-aff6-c1de15962724" CvTextArea="109, 402, 72, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="110, 399, 71, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='password-label' tag='LABEL' type='' class='MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-ov2ujp' aaname='Password' check:innerText='Password' /&gt;" Guid="2fe15d84-1704-4c46-8336-a8ca8189dee5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="790d4299e97670bfd148943f058660cc.png" xmlns="">0uNq_ylM1WUSKGSem0QNKkQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

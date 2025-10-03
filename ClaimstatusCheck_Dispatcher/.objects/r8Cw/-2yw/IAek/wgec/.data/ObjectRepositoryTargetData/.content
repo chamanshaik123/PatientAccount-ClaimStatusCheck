@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-YDqfw9bTESHTb5LOVWtSQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7f0b7085-16dc-4428-a1e6-adb546aca5c7" DesignTimeRectangle="209, 188, 162, 22" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;ctrl name='Password :' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Password :' role='editable text' automationid='' /&gt;" Guid="23cf2c4d-d5c7-4f03-89d3-a8b488fa1ff0" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7f0b7085-16dc-4428-a1e6-adb546aca5c7" CvTextArea="206, 169, 67, 14" CvTextArgument="Password :" CvType="Text" DesignTimeRectangle="207, 168, 166, 16" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1007' title='&amp;amp;Password :' /&gt;&lt;ctrl name='Password :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1007' title='&amp;amp;Password :' /&gt;&lt;ctrl name='Password :' role='text' automationid='' check:text='Password :' /&gt;" Guid="758ac17e-ccb2-487a-9dad-66242dbcbe10" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8a2c73d5476ace590638d5056af7394a.png" xmlns="">0sHjRkpbEFUqWT9yf3DJL_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

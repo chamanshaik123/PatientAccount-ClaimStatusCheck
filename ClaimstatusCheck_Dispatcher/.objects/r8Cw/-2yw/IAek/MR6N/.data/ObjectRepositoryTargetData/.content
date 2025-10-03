@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9P7st89YmkOoriXBCIwF8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="8014f3a3-cfdc-4ee6-be88-c47ba87cd0f9" CvElementArea="208, 131, 166, 25" CvType="InputBox" DesignTimeRectangle="210, 135, 143, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Username*' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Username*' role='editable text' automationid='' /&gt;" Guid="3f246656-3222-4cc6-bba8-d6516c5d3872" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='cernserver.exe' cls='#32770' isremoteapp='1' title='Millennium Logon' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8014f3a3-cfdc-4ee6-be88-c47ba87cd0f9" CvTextArea="206, 115, 70, 14" CvTextArgument="Username :" CvType="Text" DesignTimeRectangle="207, 114, 166, 16" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1020' title='&amp;amp;Username :' /&gt;&lt;ctrl name='Username :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1020' title='&amp;amp;Username :' /&gt;&lt;ctrl name='Username :' role='text' automationid='' check:text='Username :' /&gt;" Guid="1f19f934-756b-40f3-9379-5f522ba516fe" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="eee8b07c9ccbc75597cfc00d272f09aa.png" xmlns="">0gsp0VjCLEUCOysr1m5tG3g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

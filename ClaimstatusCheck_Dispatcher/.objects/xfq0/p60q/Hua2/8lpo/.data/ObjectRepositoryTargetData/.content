@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fjq1D52WdU2D6kbA6J4IeQ" Reference="O7jwmsldt0a3NKdfcatgIg/8lpoSOY-1E6Ylhnn3YpUkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="c8f0f3ef-1f2d-4746-ba4c-29bce46f3bdf" DesignTimeRectangle="1014, 568, 110, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Continue' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Continue' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation css-46cj23' check:text='Continue' /&gt;" Guid="1622243a-5189-44cd-b5a8-4f8eeb6884bd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="0d995675c42a6e7cc11556f94f19466c.png" xmlns="">0PWZEvPeXjUmrXSab-WxUWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

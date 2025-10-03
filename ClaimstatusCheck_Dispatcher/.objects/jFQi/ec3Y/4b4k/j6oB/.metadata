@@ -1,0 +1,14 @@
+﻿{
+  "Name": "RevElate",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "j6oBRnxnGEGBO-sl2kPtHg",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/j6oBRnxnGEGBO-sl2kPtHg",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/4b4kd8U9EUiq1pILcedBOg",
+  "Created": "2025-04-22T14:56:49.0531662Z",
+  "Updated": "2025-04-22T14:56:49.0531662Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": " Patient First Name",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "MCX1DCpT20KJxjJBCwkoJA",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/MCX1DCpT20KJxjJBCwkoJA",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/wsNJ4g6n2kKagvYBVxuSKw",
+  "Created": "2025-04-15T11:34:35.8780697Z",
+  "Updated": "2025-04-15T11:34:35.8780697Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kse6xW9LTkKMjvkOCBpiqA" Reference="O7jwmsldt0a3NKdfcatgIg/cxLIAPX1ik-yRnAubXFyeA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="apps.availity.com/web/onboarding/availity-fr-ui" CVScreenId="d56d72f4-63bd-4fb7-8b19-d1ed60bb059b" DesignTimeRectangle="486, 378, 40, 40" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl parentid='2fa-start-page-content-grid' tag='LABEL' innertext='Authenticate me using my Authenticator app' /&gt;&lt;webctrl tag='INPUT' name='choice' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='2fa-start-page-content-grid' tag='LABEL' innertext='Authenticate me using my Authenticator app' /&gt;&lt;webctrl tag='INPUT' name='choice' type='radio' class='PrivateSwitchBase-input css-1m9pwf3' aaname='' /&gt;" Guid="532686e7-f60a-49cd-bc9b-0ce5792bff60" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Availity Essentials' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="4180b031be9f1d73ab73bac2d4042956.png" xmlns="">0cZ9M3icmu0eEd0wDNcmYCw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

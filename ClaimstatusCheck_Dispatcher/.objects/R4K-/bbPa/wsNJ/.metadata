@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Availity Essentials - Less than 28 min",
+  "Type": "Screen",
+  "Id": "wsNJ4g6n2kKagvYBVxuSKw",
+  "Reference": "O7jwmsldt0a3NKdfcatgIg/wsNJ4g6n2kKagvYBVxuSKw",
+  "ParentRef": "O7jwmsldt0a3NKdfcatgIg/bbPa5OJCx064P_V_ZBJAmA",
+  "Created": "2025-04-15T10:45:36.8277262Z",
+  "Updated": "2025-04-15T10:45:36.8277262Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
